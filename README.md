@@ -12,7 +12,7 @@ A kid-friendly system for controlling Sonos® with QR codes.
 <img src="docs/images/dinoqode-photo-7.jpg" width="90%" height="40%">
 </p>
 
-## What Is It?
+## What is it?
 
 On the hardware side, it's just a camera-attached Raspberry Pi nested inside some LEGO® and running some custom software that scans QR codes and translates them into commands that control your Sonos® system.
 
@@ -283,4 +283,4 @@ Hearty thanks to the authors of the following libraries:
 
 ## License
 
-`dinoqode` is released under an MIT license. See the LICENSE file for the full license.
+`Dinoqode` is released under an MIT license. See the LICENSE file for the full license.
