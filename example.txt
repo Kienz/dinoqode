@@ -1,0 +1,306 @@
+#########################
+# Apple Music
+#########################
+# Benjamin Blümchen
+# applemusic:album:1139339828|Folge 1: als Wetterelefant|Benjamin Blümchen|https://is3-ssl.mzstatic.com/image/thumb/Music30/v4/fc/a8/d1/fca8d129-281c-c74f-f08c-6550128591b3/190295928582.jpg/939x0w.jpg
+# applemusic:album:1139324907|Folge 2: Benjamin Blümchen rettet den Zoo|Benjamin Blümchen|https://is2-ssl.mzstatic.com/image/thumb/Music6/v4/0d/74/af/0d74af5d-0bca-9f70-7d44-a3f187ea7e20/825646437788.jpg/939x0w.jpg
+# applemusic:album:1139325848|Folge 3: Kampf dem Lärm|Benjamin Blümchen|https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/c8/ad/75/c8ad75cb-d4bb-d98a-35fd-643edbf0525e/825646437771.jpg/939x0w.jpg
+# applemusic:album:1139324483|Folge 4: Benjamin Blümchen in Afrika|Benjamin Blümchen|https://is3-ssl.mzstatic.com/image/thumb/Music3/v4/c3/ef/c0/c3efc0a7-c508-5dca-6efb-ac48482392aa/825646437672.jpg/939x0w.jpg
+# applemusic:album:1139321783|Folge 5: Benjamin Blümchen auf hoher See|Benjamin Blümchen|https://is4-ssl.mzstatic.com/image/thumb/Music49/v4/39/6e/77/396e77f5-a1e4-51b2-0d63-9196fe4a2a18/825646437658.jpg/939x0w.jpg
+# applemusic:album:1139315660|Folge 6: Benjamin Blümchen und die Schule|Benjamin Blümchen|https://is2-ssl.mzstatic.com/image/thumb/Music69/v4/20/38/2f/20382f17-a9ad-3446-ba24-47c989b3acff/825646229758.jpg/939x0w.jpg
+# applemusic:album:1139319157|Folge 7: Benjamin Blümchen verliebt sich|Benjamin Blümchen|https://is5-ssl.mzstatic.com/image/thumb/Music30/v4/20/10/25/2010254c-d926-e9b9-f01f-7b916278549c/mzm.cuhvnvjk.jpg/939x0w.jpg
+# applemusic:album:1139319951|Folge 8: Benjamin Blümchen auf dem Baum|Benjamin Blümchen|https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/ae/16/5b/ae165b59-fe71-7fc0-348e-f6457512de82/825646229697.jpg/939x0w.jpg
+# applemusic:album:1139331066|Folge 9: Benjamin Blümchen hat Geburtstag|Benjamin Blümchen|https://is3-ssl.mzstatic.com/image/thumb/Music69/v4/0e/32/ac/0e32acf6-9d13-ee87-83b7-ddedb9a0a519/825646395637.jpg/939x0w.jpg
+# applemusic:album:1139318143|Folge 10: Benjamin Blümchen und das Schloss|Benjamin Blümchen|https://is3-ssl.mzstatic.com/image/thumb/Music69/v4/3a/ab/a4/3aaba49f-00da-d989-5566-4b2e88ddfaf1/825646228768.jpg/939x0w.jpg
+# applemusic:album:1139317873|Folge 11: Benjamin Blümchen auf dem Mond|Benjamin Blümchen|https://is2-ssl.mzstatic.com/image/thumb/Music49/v4/cf/da/ba/cfdabaac-483a-ba90-fd67-83d06df419b8/825646088430.jpg/939x0w.jpg
+# applemusic:album:1139316719|Folge 12: Benjamin Blümchen als Briefträger|Benjamin Blümchen|https://is4-ssl.mzstatic.com/image/thumb/Music49/v4/6d/91/2e/6d912ef1-283f-a0aa-4cb2-15ddf0d37d00/825646228751.jpg/939x0w.jpg
+# applemusic:album:1139323584|Folge 13: Benjamin Blümchen im Krankenhaus|Benjamin Blümchen|https://is4-ssl.mzstatic.com/image/thumb/Music69/v4/1e/a7/62/1ea76268-12de-d103-7a54-710707f36bfa/825646262076.jpg/939x0w.jpg
+# applemusic:album:1139282141|Folge 122: als Polizist|Benjamin Blümchen|https://is3-ssl.mzstatic.com/image/thumb/Music30/v4/58/b9/d0/58b9d0ca-a3a9-b5ba-5a5c-e6bccace24d6/190295919702.jpg/939x0w.jpg
+# applemusic:album:1139318036|Folge 41: als Pirat|Benjamin Blümchen|https://is2-ssl.mzstatic.com/image/thumb/Music/5f/41/02/mzi.lrqvxgys.jpg/939x0w.jpg
+# applemusic:album:1276230718|Folge 136: Spuk im Zoo|Benjamin Blümchen|https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/7f/48/af/7f48aff2-1f78-c415-db0f-8ab89abf3e21/190295747565.jpg/939x0w.jpg
+# applemusic:album:1352376032|Folge 138: Das neue Müllauto|Benjamin Blümchen|https://is4-ssl.mzstatic.com/image/thumb/Music62/v4/c5/e6/58/c5e658f1-4a71-801c-9fd5-702cb4e114ea/190295659479.jpg/939x0w.jpg
+# applemusic:album:1139323715|Folge 34: als Lokomotivführer|Benjamin Blümchen|https://is1-ssl.mzstatic.com/image/thumb/Music60/v4/e5/12/f4/e512f4f5-42d7-3b8e-6971-ad9e059218e5/190295925567.jpg/939x0w.jpg
+# applemusic:album:1069189575|Benjamin Blümchen Liederzoo: Was machst du?|Benjamin Blümchen|https://is5-ssl.mzstatic.com/image/thumb/Music49/v4/bd/4e/5f/bd4e5f63-adc4-c35a-008c-d472228b6996/825646107810.jpg/939x0w.jpg
+# applemusic:album:1448692024|Folge 141: Nachts in der Erfinderwerkstatt|Benjamin Blümchen|https://is4-ssl.mzstatic.com/image/thumb/Music114/v4/46/2f/43/462f437e-7a80-62e8-a37c-ddae1571ea21/190295502126.jpg/828x0w.jpg
+# applemusic:album:1439332340|Gute Nacht Geschichten - Folge 28: Der Winterschlaf-Teddy|Benjamin Blümchen|https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/35/96/af/3596af93-c86a-e09c-4d31-a995e4818797/190295536084.jpg/939x0w.jpg
+
+# Feuerwehrmann Sam
+# applemusic:album:1224590335|Folgen 1-5: Der Neue Held Von Nebenan|Feuerwehrmann Sam|https://is3-ssl.mzstatic.com/image/thumb/Music111/v4/98/b1/ff/98b1ffbf-8589-374c-dc7b-6fafab13a133/dj.hqsdtddx.jpg/939x0w.jpg
+# applemusic:album:1221501365|Folgen 1-4: Wasser Marsch (Classic)|Feuerwehrmann Sam|https://is2-ssl.mzstatic.com/image/thumb/Music111/v4/c8/28/b2/c828b23d-fe32-0695-2e3e-dab0381a00de/4260009918157_1448.jpg/939x0w.jpg
+# applemusic:album:1221979554|Folgen 5-8: Unser Held von Nebenan (Classic)|Feuerwehrmann Sam|https://is3-ssl.mzstatic.com/image/thumb/Music122/v4/26/40/79/26407916-56a2-38b8-d0cf-f6abe6843ece/4260264439367_1448.jpg/939x0w.jpg
+# applemusic:album:1225152033|Folgen 6-10: Das Baby im Schafspelz|Feuerwehrmann Sam|https://is5-ssl.mzstatic.com/image/thumb/Music111/v4/1c/9c/f6/1c9cf648-4955-c576-b814-7df25bd972ee/dj.hzquhgmj.jpg/939x0w.jpg
+# applemusic:album:1221605227|Folgen 9-12: Allzeit Bereit! (Classic)|Feuerwehrmann Sam|https://is5-ssl.mzstatic.com/image/thumb/Music111/v4/5e/c9/0c/5ec90cde-5d9a-99ab-7132-943e8cebaf1d/4260009918171_1448.jpg/939x0w.jpg
+# applemusic:album:1221748101|Folgen 11-15: Der Retter in der Not|Feuerwehrmann Sam|https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/f9/57/2c/f9572ce4-20ac-4cbc-bfc1-b5aedc350052/dj.guomwfab.jpg/939x0w.jpg
+# applemusic:album:1221957683|Folgen 13-16: Feueralarm! (Classic)|Feuerwehrmann Sam|https://is2-ssl.mzstatic.com/image/thumb/Music111/v4/dd/9f/f1/dd9ff11a-d220-e641-7932-ae72c3eb3339/4260264439381_1448.jpg/939x0w.jpg
+# applemusic:album:1221960014|Folgen 17-21: Winter in Pontypandy (Classic)|Feuerwehrmann Sam|https://is2-ssl.mzstatic.com/image/thumb/Music122/v4/9e/14/bc/9e14bc25-3fc9-6066-a79b-9005b1c4b630/4260264439398_1448.jpg/939x0w.jpg
+# applemusic:album:1225147135|Folgen 16-20: Falscher Alarm|Feuerwehrmann Sam|https://is3-ssl.mzstatic.com/image/thumb/Music122/v4/aa/ac/cd/aaaccda0-4701-22d8-0701-9f387c2fc806/dj.eyzxaoug.jpg/939x0w.jpg
+# applemusic:album:1221762730|Folgen 27-31: Der Große Knall|Feuerwehrmann Sam|https://is2-ssl.mzstatic.com/image/thumb/Music117/v4/23/b7/2b/23b72b90-d606-441b-2c96-591a78d68dde/dj.zzyiotpq.jpg/939x0w.jpg
+# applemusic:album:1225150225|Folgen 32-37: Wildes Gewässer|Feuerwehrmann Sam|https://is5-ssl.mzstatic.com/image/thumb/Music91/v4/56/d4/58/56d45856-69c9-5c1e-9533-fa9a23e20125/dj.hhypykvs.jpg/939x0w.jpg
+# applemusic:album:1225148951|Folgen 38-42: Abenteuer in Pontypandy|Feuerwehrmann Sam|https://is3-ssl.mzstatic.com/image/thumb/Music111/v4/89/4b/87/894b8729-cf4f-830e-3cc6-108bf595f7e7/dj.kwfujhyw.jpg/939x0w.jpg
+# applemusic:album:1225149024|Folgen 43-47: Der Retter von Pontypandy|Feuerwehrmann Sam|https://is4-ssl.mzstatic.com/image/thumb/Music122/v4/80/e7/2c/80e72c3c-4978-756f-b14f-9f55f881397d/dj.nhnbqtmu.jpg/939x0w.jpg
+# applemusic:album:1225152113|Folgen 48-52: Tag der offenen Tür|Feuerwehrmann Sam|https://is2-ssl.mzstatic.com/image/thumb/Music111/v4/75/0a/a2/750aa24e-5d52-7db5-c997-2d9f21570559/dj.mgzidsdc.jpg/939x0w.jpg
+# applemusic:album:1132542243|Folgen 53-57: In Pontypandy wird's wild|Feuerwehrmann Sam|https://is4-ssl.mzstatic.com/image/thumb/Music18/v4/9a/4c/85/9a4c8593-6dbc-7e85-70fd-52d5b8c1763a/4260264439008_1448.jpg/939x0w.jpg
+# applemusic:album:1133465331|Folgen 58-62: Helden auf dem Wasser|Feuerwehrmann Sam|https://is5-ssl.mzstatic.com/image/thumb/Music60/v4/a7/5b/22/a75b22f1-ed9d-cb08-334b-e425f67e4159/4260264439015_1448.jpg/939x0w.jpg
+# applemusic:album:1133465330|Folgen 63-67: Der tapfere Retter|Feuerwehrmann Sam|https://is2-ssl.mzstatic.com/image/thumb/Music18/v4/17/18/c1/1718c1ca-3632-f2ee-4f70-d201dde54f99/4260264439022_1448.jpg/939x0w.jpg
+# applemusic:album:1110716239|Folgen 68-72: Abenteuer im Schnee|Feuerwehrmann Sam|https://is3-ssl.mzstatic.com/image/thumb/Music60/v4/5d/a1/d3/5da1d39e-8c34-0961-7528-dd1aee5d57f2/4260009919031_1448.jpg/939x0w.jpg
+# applemusic:album:1133487526|Folgen 73-78: Einsatz in den Bergen|Feuerwehrmann Sam|https://is3-ssl.mzstatic.com/image/thumb/Music18/v4/75/c2/4a/75c24a6d-d102-d998-9cce-0dc5134892d9/4260264439046_1448.jpg/939x0w.jpg
+# applemusic:album:1139230348|Folgen 79-84: Mann über Bord|Feuerwehrmann Sam|https://is1-ssl.mzstatic.com/image/thumb/Music60/v4/78/fd/5f/78fd5f2a-3173-eb7d-2460-3f862fcc4125/4260009919901_1448.jpg/939x0w.jpg
+# applemusic:album:1173521976|Folgen 85-89: Auf dünnem Eis|Feuerwehrmann Sam|https://is5-ssl.mzstatic.com/image/thumb/Music71/v4/54/5b/7e/545b7ed5-24b4-2b2f-fa8b-063accc7fb4b/4260009919918_1448.jpg/939x0w.jpg
+# applemusic:album:1207910617|Folgen 90-94: Eine Insel voller Abenteuer|Feuerwehrmann Sam|https://is2-ssl.mzstatic.com/image/thumb/Music122/v4/3f/5f/86/3f5f866b-aeea-fa8d-500e-a9411b820771/4260009919925_1448.jpg/939x0w.jpg
+# applemusic:album:1246818569|Folgen 95-98: Norman außer Rand und Band|Feuerwehrmann Sam|https://is3-ssl.mzstatic.com/image/thumb/Music117/v4/4f/f2/b4/4ff2b46f-b9a4-ca29-57f1-a1fb59f6018f/4260264439084_1448.jpg/939x0w.jpg
+# applemusic:album:1283307925|Folgen 99-103: In Pontypandy ist was los|Feuerwehrmann Sam|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/96/87/4f/96874f8f-3503-0f50-c673-dc3d683f6183/4260264439091_1448.jpg/939x0w.jpg
+# applemusic:album:1450618836|Folgen 104-108: Wettlauf gegen die Zeit|Feuerwehrmann Sam|https://is4-ssl.mzstatic.com/image/thumb/Music114/v4/4a/57/b4/4a57b4b4-e66e-d87f-f705-c820e932a867/4260264438759_3000.jpg/939x0w.jpg
+# applemusic:album:1444611552|Plötzlich Filmheld! (Das Original-Hörspiel zum Film)|Feuerwehrmann Sam|https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/bd/1f/8c/bd1f8c26-575a-117a-c4be-31dcbde4646b/4260264438865_3000.jpg/939x0w.jpg
+# applemusic:album:1228197240|Achtung Außerirdische (Das Original-Hörspiel zum Film)|Feuerwehrmann Sam|https://is2-ssl.mzstatic.com/image/thumb/Music111/v4/9f/b7/3a/9fb73a1d-e624-b6b1-eac0-5ef99b36e368/4260009919963_1448.jpg/939x0w.jpg
+# applemusic:album:1102373022|Helden im Sturm (Das Original-Hörspiel zum Film)|Feuerwehrmann Sam|https://is3-ssl.mzstatic.com/image/thumb/Music49/v4/d9/04/83/d90483ea-224e-a20b-f129-f2b4efff9204/4260009919086_1448.jpg/939x0w.jpg
+
+# Bob der Baumeister
+# applemusic:album:1085630938|Folge 1: Bob der Küchenmeister|Bob der Baumeister|https://is2-ssl.mzstatic.com/image/thumb/Music49/v4/cf/2a/b5/cf2ab598-7869-284c-68c0-04764863f62b/886445686241.jpg/939x0w.jpg
+# applemusic:album:1085630750|Folge 2: Wie Hund und Katze|Bob der Baumeister|https://is4-ssl.mzstatic.com/image/thumb/Music49/v4/99/54/9d/99549d28-afc7-0c59-3388-769d6ed3556a/886445686289.jpg/939x0w.jpg
+# applemusic:album:1100607933|Folge 3: Leo, der Filmstar|Bob der Baumeister|https://is4-ssl.mzstatic.com/image/thumb/Music49/v4/2d/dc/b9/2ddcb95d-e9a8-d44e-c737-394d600209c8/886445686326.jpg/939x0w.jpg
+# applemusic:album:1101666276|Folge 4: Ein Riesenrad für Hochhausen|Bob der Baumeister|https://is4-ssl.mzstatic.com/image/thumb/Music49/v4/42/75/82/42758283-91ad-42b4-e8bf-1ea5afccbfb3/886445686333.jpg/939x0w.jpg
+# applemusic:album:1134480686|Folge 5: Gib niemals auf!|Bob der Baumeister|https://is4-ssl.mzstatic.com/image/thumb/Music30/v4/4f/59/c1/4f59c1d8-2715-c1a1-8d4c-3046df8799bd/886445686340.jpg/939x0w.jpg
+# applemusic:album:1136605951|Folge 6: Der Geist aus der Kiste|Bob der Baumeister|https://is1-ssl.mzstatic.com/image/thumb/Music18/v4/ea/65/84/ea6584e8-551c-90f9-d0ff-84c906d41b65/886445730319.jpg/939x0w.jpg
+# applemusic:album:1144841376|Folge 7: Das Winterfest|Bob der Baumeister|https://is1-ssl.mzstatic.com/image/thumb/Music22/v4/2d/33/08/2d3308c9-f3b8-8a34-7a0a-a6275ea34272/886445730326.jpg/939x0w.jpg
+# applemusic:album:1163744050|Folge 8: Baggi allein zu Haus|Bob der Baumeister|https://is2-ssl.mzstatic.com/image/thumb/Music71/v4/d4/2d/d1/d42dd1bc-1cee-4667-0a08-fdcfb982bf04/886445730333.jpg/939x0w.jpg
+# applemusic:album:1198995869|Folge 9: Buddel und der Elefant|Bob der Baumeister|https://is5-ssl.mzstatic.com/image/thumb/Music111/v4/30/cb/34/30cb34a5-2146-4697-7cc9-ca9e0491d9fb/886445730340.jpg/939x0w.jpg
+# applemusic:album:1199386128|Folge 10: Ein Dino für Hochhausen|Bob der Baumeister|https://is1-ssl.mzstatic.com/image/thumb/Music111/v4/f2/9d/51/f29d51bd-29fd-7cfc-f357-fb6c77185835/886445730357.jpg/939x0w.jpg
+# applemusic:album:1254452481|Folge 11: Das Milchshake-Durcheinander|Bob der Baumeister|https://is5-ssl.mzstatic.com/image/thumb/Music127/v4/43/5f/5c/435f5c62-2145-5a9b-0b3a-a2889bbd84d9/886446046327.jpg/939x0w.jpg
+# applemusic:album:1281475337|Folge 12: Die kleinste Rakete im Weltall|Bob der Baumeister|https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/79/82/5b/79825b4d-109a-0457-9f78-d72948edf963/886446046334.jpg/939x0w.jpg
+# applemusic:album:1348687594|Folge 13: Mixis Piraten|Bob der Baumeister|https://is4-ssl.mzstatic.com/image/thumb/Music62/v4/ac/ff/aa/acffaa91-f7b2-ee77-55d0-6f2360a73ae3/886446046341.jpg/939x0w.jpg
+# applemusic:album:1377070826|Folge 14: Strandgut und Treibgut|Bob der Baumeister|https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/dd/0a/77/dd0a7791-7520-ea71-ce3e-cd6d960dccc3/886446945859.jpg/939x0w.jpg
+# applemusic:album:1408541771|Folge 15: Das Buddel-Kuddel-Muddel|Bob der Baumeister|https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/e9/c3/fc/e9c3fc79-22a8-6311-3b20-1c039bb04478/886446945866.jpg/939x0w.jpg
+# applemusic:album:1417825881|Folge 16: Die allerbeste Weihnachtsfeier|Bob der Baumeister|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/05/95/d8/0595d83c-c108-faa3-1e43-af090196340f/886446945873.jpg/939x0w.jpg
+# applemusic:album:1439429123|Folge 17: Leos Prüfung|Bob der Baumeister|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/62/82/4f/62824f0a-aee5-42ae-4230-eb47be9fcbe8/886446945880.jpg/939x0w.jpg
+
+# Alben 30 besten ...
+# applemusic:album:532053447|Die 30 besten englischen Kinderlieder|Simone Sommerland|https://is3-ssl.mzstatic.com/image/thumb/Music/v4/7e/75/c4/7e75c487-c14f-907e-852b-9e27b870209d/cover.jpg/939x0w.jpg
+# applemusic:album:1444477806|Die 30 besten neuen Partylieder|Simone Sommerland|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/7e/e5/69/7ee56979-100b-d514-9c02-662bb71493c5/cover.jpg/939x0w.jpg
+# applemusic:album:1395896599|Die 30 besten Lieder für Jungs|Simone Sommerland|https://is4-ssl.mzstatic.com/image/thumb/Music115/v4/3e/f8/97/3ef897bb-4694-52d0-4e8c-63e4a5e45140/cover.jpg/939x0w.jpg
+# applemusic:album:1355632123|Die 30 besten Kindergartenlieder 2|Simone Sommerland|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/67/d6/5c/67d65c65-1d88-4c96-e6a8-9d32364fcb34/cover.jpg/939x0w.jpg
+# applemusic:album:1318859269|Die 30 besten Partylieder für Kinder 2|Simone Sommerland|https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/47/10/5a/47105a1d-50b7-1a3f-cabd-82e7a4bd2acc/cover.jpg/939x0w.jpg
+# applemusic:album:1202232007|Die 30 besten Kniereiter- und Fingerspiellieder|Simone Sommerland|https://is2-ssl.mzstatic.com/image/thumb/Music111/v4/d5/df/7b/d5df7bb1-dc03-6608-ff97-4031f4e87749/cover.jpg/939x0w.jpg
+# applemusic:album:1120668237|Die 30 besten Urlaubs- und Sommerlieder|Simone Sommerland|https://is3-ssl.mzstatic.com/image/thumb/Music60/v4/3a/4f/ac/3a4facf8-aec9-662f-87a6-83e50dd3f64a/cover.jpg/939x0w.jpg
+# applemusic:album:1029102357|Die 30 besten Faschings- und Karnevalslieder|Simone Sommerland|https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/12/a6/00/12a6000d-9280-d44a-951c-f726793a28e2/cover.jpg/939x0w.jpg
+# applemusic:album:915391571|Die 30 besten Spiel- und Bewegungslieder 3|Simone Sommerland|https://is4-ssl.mzstatic.com/image/thumb/Music71/v4/fe/d7/a4/fed7a4a8-606d-02ab-e42d-3d137c586773/cover.jpg/939x0w.jpg
+# applemusic:album:623261022|Die 30 besten Kindergartenlieder|Simone Sommerland|https://is2-ssl.mzstatic.com/image/thumb/Music3/v4/a2/56/23/a256238c-d807-6c8e-5c34-cbf58067b95e/cover.jpg/939x0w.jpg
+# applemusic:album:556452072|Die 30 besten Kinderlieder auf Weltreise|Simone Sommerland|https://is2-ssl.mzstatic.com/image/thumb/Music/v4/e1/c0/a0/e1c0a0e2-3f26-db6c-3246-4eaae64c09e8/cover.jpg/939x0w.jpg
+# applemusic:album:811254155|Die 30 besten Spiel- und Bewegungslieder|Simone Sommerland|https://is5-ssl.mzstatic.com/image/thumb/Music4/v4/98/30/46/983046a6-6eec-d376-7491-3894d4a243cd/cover.jpg/939x0w.jpg
+# applemusic:album:464028329|Die 30 besten traditionellen Kinderlieder|Simone Sommerland|https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/20/14/f7/2014f7aa-4da1-fd51-1afa-c740a815f37c/cover.jpg/939x0w.jpg
+
+# Bibi Blocksberg
+# applemusic:album:1143559999|Folge 1: Hexen gibt es doch|Bibi Blocksberg|https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/4e/85/78/4e85786e-35fd-2470-7217-134fd4e4cb48/190295919139.jpg/939x0w.jpg
+# applemusic:album:1155741831|Folge 2: Hexerei in der Schule|Bibi Blocksberg|https://is2-ssl.mzstatic.com/image/thumb/Music6/v4/9f/56/69/9f5669cd-b166-4048-cabc-5e9809e5969d/825646437351.jpg/939x0w.jpg
+# applemusic:album:1143558808|Folge 3: Die Zauberlimonade|Bibi Blocksberg|https://is2-ssl.mzstatic.com/image/thumb/Music3/v4/ab/c0/59/abc05989-69c9-9b02-4453-2d236f805c43/825646437344.jpg/939x0w.jpg
+# applemusic:album:1143560812|Folge 4: Der Bankräuber|Bibi Blocksberg|https://is5-ssl.mzstatic.com/image/thumb/Music69/v4/aa/6a/6b/aa6a6b65-3c8a-80b2-c6dd-c023a2501b81/825646437337.jpg/939x0w.jpg
+# applemusic:album:1143583702|Folge 5: Ein verhexter Urlaub|Bibi Blocksberg|https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/e6/5c/bd/e65cbd05-2521-57f7-d74d-2e7233145873/825646437290.jpg/939x0w.jpg
+# applemusic:album:1143573489|Folge 6: Die Kuh im Schlafzimmer|Bibi Blocksberg|https://is2-ssl.mzstatic.com/image/thumb/Music49/v4/0a/f4/e5/0af4e561-f79b-4e9d-76db-47f10d56575c/825646437283.jpg/939x0w.jpg
+# applemusic:album:1143572177|Folge 7: heilt den Bürgermeister|Bibi Blocksberg|https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/3b/16/1a/3b161ae6-a067-473f-85b4-798f8ad0503a/190295918446.jpg/939x0w.jpg
+# applemusic:album:1143583025|Folge 8: Die Schlossgespenster|Bibi Blocksberg|https://is3-ssl.mzstatic.com/image/thumb/Music49/v4/c7/6a/d3/c76ad3c2-3c36-e266-eafe-6b9d977a6511/825646394975.jpg/939x0w.jpg
+# applemusic:album:1143572708|Folge 9: verliebt sich|Bibi Blocksberg|https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/f5/47/3b/f5473bc7-bdee-4952-7f66-3f4dea42377f/190295918408.jpg/939x0w.jpg
+# applemusic:album:1143582073|Folge 10: Bibis neue Freundin|Bibi Blocksberg|https://is5-ssl.mzstatic.com/image/thumb/Music62/v4/65/36/81/6536810d-05a9-b8ff-4952-3a7f9c4c6060/190295918361.jpg/939x0w.jpg
+# applemusic:album:1143582616|Folge 11: Der Schulausflug|Bibi Blocksberg|https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/c3/63/60/c3636048-1158-52d5-a37c-845514aa58e0/190295918347.jpg/939x0w.jpg
+# applemusic:album:1143581597|Folge 12: hat Geburtstag|Bibi Blocksberg|https://is1-ssl.mzstatic.com/image/thumb/Music22/v4/e9/7c/7d/e97c7dbb-40eb-f484-59d1-b14d99563eb9/190295918309.jpg/939x0w.jpg
+# applemusic:album:1143593231|Folge 13: Ein verhexter Sonntag|Bibi Blocksberg|https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/88/e0/44/88e04495-6ffe-bc50-26d5-04cb9256f918/190295918415.jpg/939x0w.jpg
+# applemusic:album:643985540|32 bekannte Fernseh-Serien Hits für Kids|Partykids|https://is2-ssl.mzstatic.com/image/thumb/Music2/v4/52/18/ae/5218ae2b-016a-8c39-8d1e-40dc58bcf928/9003549552048_cover.jpg/939x0w.jpg
+# applemusic:song:643985762|Thomas die kleine Lokomotive und seine Freunde|Die Partykids||https://static.theworks.co.uk/images/9781405269599_Z.jpg
+# applemusic:song:1208876361|Thomas the Tank Engine|TV Theme Songs Unlimited||https://is5-ssl.mzstatic.com/image/thumb/Music/69/ce/ad/mzi.ahgwdevd.tif/939x0w.jpg
+# applemusic:song:421152367|Bob der Baumeister|Die Super-duper-band||https://images-na.ssl-images-amazon.com/images/I/51FG7tUo7sL._SY355_.jpg
+# applemusic:song:1208876359|Bob the Builder|TV Theme Songs Unlimited||https://is4-ssl.mzstatic.com/image/thumb/Music/12/e0/04/mzi.seonxjig.jpg/939x0w.jpg
+# applemusic:song:1208876380|Fireman Sam|TV Theme Songs Unlimited||https://www.booktopia.com.au/http_coversbooktopiacomau/big/9781405276764/fireman-sam-jupiter-and-the-burning-blaze.jpg
+
+# Pumuckl
+# applemusic:album:1328668493|01: Weihnachten - Pumuckl und der Nikolaus|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/37/f7/40/37f740fc-1dae-9004-6047-c55d8d642acb/17UM1IM63868.jpg/939x0w.jpg
+# applemusic:album:1328678299|02: Weihnachten - Auf heißer Spur|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/c0/6a/e1/c06ae103-1183-d359-4b84-5b2a56737d58/17UM1IM63869.jpg/939x0w.jpg
+# applemusic:album:1328676314|03: Weihnachten - Das Weihnachtsgeschenk|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/5d/7f/f8/5d7ff871-fa0a-b126-8e22-70e15f91f8d9/17UM1IM63870.jpg/939x0w.jpg
+# applemusic:album:1328652662|04: Weihnachten - Der erste Schnee|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/90/3a/31/903a31f1-48e9-b873-adbe-56d80a18b91b/17UM1IM63871.jpg/939x0w.jpg
+# applemusic:album:1328676384|05: Weihnachten - Pumuckl und die Christbaumkugeln|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/b6/38/92/b6389258-019c-3a5a-80dc-1c168ffbb776/17UM1IM63872.jpg/939x0w.jpg
+# applemusic:album:1328640898|06: Weihnachten Folge - Pumuckl und die Schatulle|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/8b/f9/1e/8bf91ecf-3ac3-ee8d-b293-9909a1d71a90/17UM1IM63873.jpg/939x0w.jpg
+applemusic:album:1328653004|01: Spuk in der Werkstatt|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/82/43/6b/82436b97-1e47-d6fc-d775-cdd1ef707942/17UM1IM63718.jpg/939x0w.jpg
+applemusic:album:1328670023|02: Das verkaufte Bett|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/10/07/a1/1007a180-5041-5519-c6d7-0a3c0fc1bf5a/17UM1IM63721.jpg/939x0w.jpg
+applemusic:album:1328678324|03: Das neue Badezimmer|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/f6/4f/b6/f64fb6c7-c8f6-7e37-f9de-919b36bd80e5/17UM1IM63722.jpg/939x0w.jpg
+applemusic:album:1328667135|04: Das Schlossgespenst|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/a7/f0/87/a7f087cd-8e68-4e5a-8e38-b42fbab55190/17UM1IM63725.jpg/939x0w.jpg
+# applemusic:album:1328652999|05: Die abergläubische Putzfrau|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/82/db/ac/82dbac05-39ff-2672-bb7b-51e5baeb722b/17UM1IM63726.jpg/939x0w.jpg
+# applemusic:album:1328642348|06: Pumuckl und die Schule|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/b5/4b/15/b54b1564-e431-ddad-8958-2a0efc46bf36/17UM1IM63729.jpg/939x0w.jpg
+# applemusic:album:1328655299|07: Pumuckl macht Ferien (Das Original aus der Fernsehserie)|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/b9/56/94/b95694d6-ddd7-0da0-da41-0b572beb672a/17UM1IM63732.jpg/939x0w.jpg
+# applemusic:album:1328647577|08: Der Geist des Wasser|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/53/37/8e/53378e56-bbfa-6816-1ad9-88d1e7f4fe91/17UM1IM63733.jpg/939x0w.jpg
+# applemusic:album:1328641374|09: Pumuckl und der Pudding|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/69/70/07/6970074a-39cb-5716-c37f-03095ae63e5f/17UM1IM63734.jpg/939x0w.jpg
+# applemusic:album:1328640718|10: Der rätselhafte Hund|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/6d/b6/dc/6db6dcaf-9154-e518-a4a1-c80cdb34da48/17UM1IM63735.jpg/939x0w.jpg
+# applemusic:album:1328665692|11: Der Wollpullover|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/b7/22/f8/b722f84e-72fc-1dc7-0ac0-6fb91e2ede44/17UM1IM63738.jpg/939x0w.jpg
+# applemusic:album:1328642020|12: Eder bekommt Besuch|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/8b/12/47/8b124771-865a-789e-2043-80ab7c49ef9f/17UM1IM63739.jpg/939x0w.jpg
+# applemusic:album:1328664358|13: Der große Krach|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/37/2e/05/372e05f4-040c-7974-d551-50b8bc4dc42d/17UM1IM63740.jpg/939x0w.jpg
+# applemusic:album:1328656968|14: Der große Krach und seine Folgen|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/4a/5b/dc/4a5bdcd5-ce89-9f9a-c84c-2d439c146ea5/17UM1IM63742.jpg/939x0w.jpg
+# applemusic:album:1328677232|15: Das Spanferkelessen|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/e3/3d/6e/e33d6ed5-457a-812a-ce03-b9e0cecf8bb9/17UM1IM63744.jpg/939x0w.jpg
+# applemusic:album:1328669681|16: Pumuckl und Puwackl|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/d5/a0/49/d5a049b1-f1aa-44b9-a33c-8f319eaa307f/17UM1IM63745.jpg/939x0w.jpg
+# applemusic:album:1328658693|17: Pumuckl und die Angst|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/f8/7a/cf/f87acf6d-5085-db6b-6471-6624a999f5fb/17UM1IM63747.jpg/939x0w.jpg
+# applemusic:album:1328659558|18: Der verhängnisvolle Schlagrahm|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/3f/de/36/3fde3683-6539-cd4f-5f18-dfaa9f653302/17UM1IM63748.jpg/939x0w.jpg
+# applemusic:album:1328669063|19: Pumuckl im Zoo|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/b9/d8/9e/b9d89e67-3952-bad4-d5bd-ad9047ffc05c/17UM1IM63750.jpg/939x0w.jpg
+# applemusic:album:1328677387|20: Die geheimnisvollen Briefe|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/a7/c9/1e/a7c91e0d-671f-340b-9176-dc1bcc51fa32/17UM1IM63751.jpg/939x0w.jpg
+# applemusic:album:1328641596|21: Pumuckl und das Segelboot|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/05/28/c4/0528c49e-dda4-d360-8dc1-44ba4ead5aca/17UM1IM63761.jpg/939x0w.jpg
+# applemusic:album:1328642625|22: Pumuckl und das Spielzeugauto|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/e4/c8/c7/e4c8c72f-6c3a-ad0b-abcb-3b437bf9b7a7/17UM1IM63762.jpg/939x0w.jpg
+# applemusic:album:1328677065|23: Pumuckl und die Bergtour|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/a5/2e/f4/a52ef436-63df-c6c2-2be9-5f01883e5d01/17UM1IM63766.jpg/939x0w.jpg
+# applemusic:album:1328658296|24: Pumuckl und die Schatzsucher|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/0f/2e/f0/0f2ef0db-b435-7b63-ad50-6fbc6e20ea3f/17UM1IM63768.jpg/939x0w.jpg
+# applemusic:album:1328654180|25: Pumuckls Rache|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/54/9a/00/549a0039-3d92-4091-f2ee-a1040ab25cf1/17UM1IM63769.jpg/939x0w.jpg
+# applemusic:album:1328668318|26: Pumuckl und die Briefmarken|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/72/9c/34/729c34a7-9318-aa2d-246f-f73ed57e7393/17UM1IM63771.jpg/939x0w.jpg
+# applemusic:album:1328661605|27: Pumuckl und das goldene Herz|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/66/a3/6e/66a36e28-ee53-9008-1573-73dfe4db2f57/17UM1IM63774.jpg/939x0w.jpg
+# applemusic:album:1328644231|28: Pumuckl und der Waldspaziergang|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/e9/0d/d9/e90dd9a2-55db-a3b9-f252-0219427a1217/17UM1IM63779.jpg/939x0w.jpg
+# applemusic:album:1328665676|29: Pumuckl und der Finderlohn|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/37/06/cc/3706cc08-6dc7-3160-d7f8-8c3a6b35beee/17UM1IM63780.jpg/939x0w.jpg
+# applemusic:album:1328665172|30: Pumuckl und die Kartenspieler|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/66/30/2d/66302dcb-b91b-6c9e-8a58-141aaef6107f/17UM1IM63781.jpg/939x0w.jpg
+# applemusic:album:1328667316|31: Pumuckl und die Mundharmonika|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/ee/90/f3/ee90f36f-46ea-346b-3ea4-c9a582179399/17UM1IM63782.jpg/939x0w.jpg
+# applemusic:album:1328679386|32: Und jetzt erst recht|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/00/0a/0e/000a0ef8-1d12-ee9e-56e2-48d380d9f7c4/17UM1IM63784.jpg/939x0w.jpg
+# applemusic:album:1328661022|33: Pumuckl und die Obstbäume|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/68/5c/81/685c811e-1539-aace-b706-06f1db015762/17UM1IM63785.jpg/939x0w.jpg
+# applemusic:album:1328652537|34: Pumuckl passt auf|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/3a/de/c4/3adec4d9-de7a-0e40-ea86-5befdb16e45b/17UM1IM63786.jpg/939x0w.jpg
+# applemusic:album:1328661611|35: Pumuckl und die Kopfwehtabletten|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/73/eb/8e/73eb8ebf-98b1-7ef8-2a05-b652014f0954/17UM1IM63787.jpg/939x0w.jpg
+# applemusic:album:1328671583|36: Der silberne Kegel|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/29/76/db/2976db44-476a-c906-73c3-d277d1662b83/17UM1IM63788.jpg/939x0w.jpg
+# applemusic:album:1328679121|37: Ein föhniger Tag|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/8c/9e/a3/8c9ea356-0945-efe7-6f19-ed20d39087da/17UM1IM63789.jpg/939x0w.jpg
+# applemusic:album:1328659077|38: Die Bank vor der Werkstatt|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/ec/53/f7/ec53f738-f46f-7500-5e2c-f0ddf8edca29/17UM1IM63791.jpg/939x0w.jpg
+# applemusic:album:1328657752|39: Pumuckl und die Knackfrösche|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/22/68/b8/2268b88c-08f0-c2f8-c83a-ad085929f9f8/17UM1IM63792.jpg/939x0w.jpg
+# applemusic:album:1328646494|40: Pumuckl wird reich|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/91/4c/0d/914c0d77-4208-2867-5106-25be859b5560/17UM1IM63793.jpg/939x0w.jpg
+# applemusic:album:1328658947|41: Pumuckl und die Gummi-Ente|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/34/9e/90/349e9099-e298-d2cf-99cf-ef52e00e7f69/17UM1IM63794.jpg/939x0w.jpg
+# applemusic:album:1328663224|42: Der Blutfleck auf dem Stuhl|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/32/9d/a7/329da7ac-b776-8b99-29d3-3f6dec681ce7/17UM1IM63795.jpg/939x0w.jpg
+# applemusic:album:1328665618|43: Ein Knüller für die Zeitung|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/34/3e/5a/343e5aca-c56b-4a75-4568-11d3ad8a2600/17UM1IM63796.jpg/939x0w.jpg
+# applemusic:album:1328641091|44: Pumuckl und das eigene Zimmer|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/f5/8d/8a/f58d8a0c-462f-cb9b-c32a-4d0c1a3b5737/17UM1IM63799.jpg/939x0w.jpg
+# applemusic:album:1328657526|45: Pumuckl will eine Uhr haben|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/28/bc/fe/28bcfe98-bd33-10e3-85eb-1470af6426a4/17UM1IM63800.jpg/939x0w.jpg
+# applemusic:album:1328655440|46: Pumuckl ist an gar nichts schuld|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/01/e4/c1/01e4c10d-8b76-3556-432f-cc4c7a4c5ab5/17UM1IM63803.jpg/939x0w.jpg
+# applemusic:album:1328641240|47: Pumuckl und der Geburtstag|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/8e/1e/2d/8e1e2daa-2176-c7f6-9ae1-8380a69ff083/17UM1IM63804.jpg/939x0w.jpg
+# applemusic:album:1328641242|48: Pumuckl und die Blechbüchsen|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/de/96/20/de96204b-56cb-e38e-dd5d-3c362a6fdb8f/17UM1IM63805.jpg/939x0w.jpg
+# applemusic:album:1328662329|49: Pumuckl und die Silberblumen|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/ec/ae/08/ecae0847-da07-c11d-d350-d902fbc2028e/17UM1IM63806.jpg/939x0w.jpg
+# applemusic:album:1328655995|50: Pumuckl und das Telefon|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/36/cc/59/36cc5959-3ea6-a29f-83ee-9b70e213d292/17UM1IM63808.jpg/939x0w.jpg
+# applemusic:album:1328645074|51: Pumuckl und die Maus|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/ed/31/94/ed3194c4-f8ea-2537-bbd4-b14414ada8f2/17UM1IM63810.jpg/939x0w.jpg
+# applemusic:album:1328644227|52: Pumuckl und die Tauben|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/5f/fa/77/5ffa7709-8576-05b1-819e-dc875e0f63c1/17UM1IM63811.jpg/939x0w.jpg
+# applemusic:album:1328666125|53: Pumuckl und der Schmutz|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/40/63/27/40632762-ba97-76cf-9b1f-b71ce59411c2/17UM1IM63812.jpg/939x0w.jpg
+# applemusic:album:1328677341|54: Pumuckl und die Katze|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/d2/3f/6a/d23f6a03-292e-d2ab-3bed-d6c4c68b2b07/17UM1IM63814.jpg/939x0w.jpg
+# applemusic:album:1328646545|55: Pumuckl spielt mit dem Feuer|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/13/01/48/130148e3-0110-c23a-70d3-944dee0a6508/17UM1IM63816.jpg/939x0w.jpg
+# applemusic:album:1328679794|56: Das Missverständnis|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/0d/5b/f7/0d5bf76c-b101-1ff1-f244-3fe9b68049b4/17UM1IM63817.jpg/939x0w.jpg
+# applemusic:album:1328679651|57: Pumuckl und das Geld|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music118/v4/8e/11/25/8e112528-6bde-ca60-5b9b-30911221bad5/17UM1IM63834.jpg/939x0w.jpg
+# applemusic:album:1328666770|58: Pumuckl soll Ordnung lernen|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/1c/33/ec/1c33ec2b-1f8c-4d2f-fa79-4fe453329324/17UM1IM63835.jpg/939x0w.jpg
+# applemusic:album:1328664245|59: Pumuckl und der Schnupfen|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/19/cc/7a/19cc7a9f-dc74-9ece-6b24-ba515992d7c1/17UM1IM63836.jpg/939x0w.jpg
+# applemusic:album:1328652028|60: Das grüne Gemälde|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/08/5f/7d/085f7d14-d6e6-1578-c151-2970212c7578/17UM1IM63837.jpg/939x0w.jpg
+# applemusic:album:1328643639|61: Pumuckl und die Ostereier|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/cd/bc/87/cdbc8715-a9b8-7d63-5097-a03bca20c771/17UM1IM63840.jpg/939x0w.jpg
+# applemusic:album:1328669013|62: Der erste April|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/23/39/37/233937d1-b7a7-f098-b545-58ee0bcb3db2/17UM1IM63841.jpg/939x0w.jpg
+# applemusic:album:1328677976|63: Das Gespenst im Gartenhaus|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/19/93/d8/1993d8ff-fc18-263e-41ca-c6cf6ca72fe4/17UM1IM63842.jpg/939x0w.jpg
+# applemusic:album:1328662327|64: Die abgerissenen Tulpen|Pumuckl|https://is5-ssl.mzstatic.com/image/thumb/Music128/v4/90/b3/34/90b33463-3150-2ed7-27e2-367bf1bc5d71/17UM1IM63843.jpg/939x0w.jpg
+# applemusic:album:1328656577|65: Pumuckl und die geheimnisvolle Schaukel|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/69/ad/0f/69ad0fdd-7493-fa55-ccb2-d2fe84dd5b79/17UM1IM63844.jpg/939x0w.jpg
+# applemusic:album:1328645031|66: Pumuckl hütet die Fische|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/87/6f/eb/876feb7b-d6a3-f9d5-dd4e-c0901a598bdd/17UM1IM63845.jpg/939x0w.jpg
+# applemusic:album:1328672614|67: Pumuckl auf Hexenjagd|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/82/6d/ff/826dff8e-52b3-5b3e-404d-9e37bf7c474f/17UM1IM63847.jpg/939x0w.jpg
+# applemusic:album:1328671580|68: Hilfe - Eine Aushilfe|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/d0/b9/18/d0b918f2-aa9b-3a13-07d5-ea2d2463828e/17UM1IM63848.jpg/939x0w.jpg
+# applemusic:album:1328641375|69: Pumuckl und die Gartenzwerge|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/27/3f/4f/273f4f4e-0413-a85a-7874-67d1581abd2f/17UM1IM63850.jpg/939x0w.jpg
+# applemusic:album:1328649659|70: Pumuckl will Schreiner werden|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/b8/19/65/b8196507-e765-9bb5-fdaa-86cf748ec43a/17UM1IM63853.jpg/939x0w.jpg
+# applemusic:album:1328660807|71: Der verbotene Kirschlikör|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music128/v4/e8/3e/4e/e83e4ef6-24d6-47f1-06b7-29fa68608705/17UM1IM63855.jpg/939x0w.jpg
+# applemusic:album:1328666699|72: Der verdrehte Tag|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/bc/ee/3d/bcee3dac-3a99-46bd-37f4-a84e52a48ce3/17UM1IM63857.jpg/939x0w.jpg
+# applemusic:album:1328665691|73: Der verstauchte Daumen|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/2d/9b/95/2d9b9589-1aa9-4aa4-1956-3d0666cc5e89/17UM1IM63860.jpg/939x0w.jpg
+# applemusic:album:1328676048|74: Das Parfümfläschchen|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/ec/c1/b9/ecc1b9c3-db7f-2f55-84da-213fd4e4495d/17UM1IM63861.jpg/939x0w.jpg
+# applemusic:album:1328642480|75: Pumuckl und der blaue Klabauter|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music118/v4/19/35/ae/1935ae5f-4a40-9c66-6acd-fbc52eca58fb/17UM1IM63862.jpg/939x0w.jpg
+# applemusic:album:1328661569|76: Pumuckl und der Wellensittich|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/eb/82/3c/eb823c7f-b623-a662-bcc6-cb256a0b4dd6/17UM1IM63863.jpg/939x0w.jpg
+# applemusic:album:1328657751|77: Alte Liebe und Alleskleber|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/0a/02/e4/0a02e476-3f04-d9c3-d3ed-ea2509e6d398/17UM1IM63864.jpg/939x0w.jpg
+# applemusic:album:1328644362|78: Pumuckl wartet auf die Bescherung|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/8e/8d/ba/8e8dba07-c6fe-1672-6a78-89025c75aead/17UM1IM63865.jpg/939x0w.jpg
+# applemusic:album:1328643237|79: Pumuckl sieht alles|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/b5/a8/ca/b5a8cad9-361d-0ca2-6e06-b95e1a25a8b5/17UM1IM63866.jpg/939x0w.jpg
+# applemusic:album:1328661247|80: Pumuckl setzt sich nicht durch|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/49/68/4e/49684e57-79e6-7971-e8b7-53dc81dcb277/17UM1IM63867.jpg/939x0w.jpg
+
+# Raabe Socke
+applemusic:album:1406330594|Hörspiele zur TV Serie 3: Ritter Sockenherz, Mission: Dreirad, Der falsche Pilz|Der kleine Rabe Socke|https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/f1/35/f4/f135f408-90b1-67e3-101f-dd540acdbf05/4251535722301_3000.jpg/939x0w.jpg
+applemusic:album:1448749527|Der kleine Rabe Socke: Alles Bitte-danke! / Alles Eis! / Socke will alles können und zwar ruckzuck!|Nele Moost|https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d2/4b/f4/d24bf401-f032-f26a-46d9-bcb88d719997/4057664483331_cover.jpg/939x0w.jpg
+applemusic:album:1448837998|Der kleine Rabe Socke: Alles verzankt! / Alles zu voll! / Alles nass!|Nele Moost|https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/9f/cc/3b/9fcc3b4a-fabe-14b6-0725-3dcf468e18e4/4057664483256_cover.jpg/939x0w.jpg
+applemusic:album:1448829017|Der kleine Rabe Socke: Alles gefunden! / Alles gemerkt! / Alles in Ordnung!|Nele Moost|https://is2-ssl.mzstatic.com/image/thumb/Music114/v4/60/66/53/606653e3-5db9-63b6-6e36-11547951a018/4057664484024_cover.jpg/939x0w.jpg
+applemusic:album:1448758126|Der kleine Rabe Socke: Alles rabenstark! / Alles aufgeräumt! / Alles kaputt!|Nele Moost|https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/c1/96/98/c196989e-3b84-d6a3-0f9d-048a428c37b7/4057664484000_cover.jpg/939x0w.jpg
+#
+#
+# applemusic:album:1019129075|Der kleine Rabe Socke II (Das große Rennen) [feat. Jan Delay]|Alex Komlew|https://is2-ssl.mzstatic.com/image/thumb/Music1/v4/74/aa/51/74aa5134-bdbc-cfd1-d5eb-8befdbb2a710/cover.jpg/939x0w.jpg
+# applemusic:album:1448842524|Der kleine Rabe Socke: Alles meins! / Alles zurückgegeben! / Alles fliegt!|Nele Moost|https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/5a/53/fd/5a53fdb8-3726-ac9e-6936-8f6e2d2169a5/4057664484017_cover.jpg/939x0w.jpg
+# applemusic:album:1448818433|Der kleine Rabe Socke: Alles verschenkt!, Alles Winter!, Alles gebacken!, Alles taut!|Nele Moost|https://is4-ssl.mzstatic.com/image/thumb/Music114/v4/9e/86/52/9e865295-50db-3347-5ad7-491480466003/4057664483263_cover.jpg/939x0w.jpg
+# applemusic:album:1448854163|Der kleine Rabe Socke: Alles vermurkst! / Alles geheim! / Alles saust um die Wette!|Nele Moost|https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/9a/0e/8e/9a0e8eff-cf1d-2580-c57f-7f54f9f6ddd0/4057664483270_cover.jpg/939x0w.jpg
+# applemusic:album:1448842249|Der kleine Rabe Socke: Alles mutig!, Alles für dich!, Alles getröstet!|Nele Moost|https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/87/34/fb/8734fb56-8a3f-db55-b59b-40f933bb7c79/4057664483997_cover.jpg/939x0w.jpg
+# applemusic:album:1448819648|Weihnachtsgeschichten: Alles Advent!, Alles glitzert!, Alles in Eile! und Alles weg!|Nele Moost|https://is4-ssl.mzstatic.com/image/thumb/Music124/v4/c1/52/65/c152656a-2cfe-78f1-0ed7-80d38a97adb6/4057664483249_cover.jpg/939x0w.jpg
+# applemusic:album:1448828653|Der kleine Rabe Socke: Alles Schule!: Alles vorbereitet! Alles aufgeweckt! Alles eingeschult! ...|Nele Moost|https://is2-ssl.mzstatic.com/image/thumb/Music114/v4/7c/fb/10/7cfb1040-ab72-0985-383e-d529041a681b/4057664483287_cover.jpg/939x0w.jpg
+# applemusic:album:1448853826|Der kleine Rabe Socke: Alles echt wahr! / Macht ja nix!|Nele Moost|https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/1d/97/b3/1d97b3ba-92d5-d547-f1ca-09a2ae78ed78/4057664483324_cover.jpg/939x0w.jpg
+# applemusic:album:1448838658|Der kleine Rabe Socke: Alles erlaubt? / Alles Urlaub!|Nele Moost|https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/01/b2/e6/01b2e625-7b1d-8562-8613-35aaac266846/4057664483317_cover.jpg/939x0w.jpg
+# applemusic:album:1448763681|Der kleine Rabe Socke: Alles Freunde! / Alles wieder gut!|Nele Moost|https://is3-ssl.mzstatic.com/image/thumb/Music124/v4/58/b4/9b/58b49b96-d369-7b22-3753-f88b48ecfbef/4057664483300_cover.jpg/939x0w.jpg
+# applemusic:album:1448814646|Der kleine Rabe Socke: Alles gefärbt! / Alles wächst! / Alles verwünscht!|Nele Moost|https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/d3/e3/c9/d3e3c958-811c-cc80-3aa2-d8e5144c7820/4057664483294_cover.jpg/939x0w.jpg
+
+# Leo Lausemaus
+applemusic:album:1038173200|Folge 1: Will nicht essen / Sagt nicht die Wahrheit / Hat schlechte Laune / Will nicht schlafen|Leo Lausemaus|https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/b8/44/99/b84499a8-5101-81d8-d98a-b539b490d6e8/825646429523.jpg/939x0w.jpg
+applemusic:album:1038084918|Folge 2: Will nicht in den Kindi / Mama geht zur Arbeit / Allein bei den großeltern / ...|Leo Lausemaus|https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/0d/b6/60/0db66041-7a53-74b8-ebcc-77f90a609fe1/825646429516.jpg/939x0w.jpg
+applemusic:album:1038096044|Folge 3: Will sich nicht die Zähne putzen / Hat Geburtstag / Will nicht verreisen / ...|Leo Lausemaus|https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/78/67/46/78674614-93b0-957b-633d-2bca43b066ae/825646296125.jpg/939x0w.jpg
+applemusic:album:1038181251|Folge 4: Will nicht baden / Mag nicht umziehen / Kann nicht verlieren / Auf zum Sport|Leo Lausemaus|https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/92/76/a9/9276a9c4-d299-3e24-8d46-1da0e1c338ed/825646296071.jpg/939x0w.jpg
+#
+#
+# applemusic:album:1038173238|Folge 5: Sein erster Wackelzahl / Besucht den Bäckermeister / Lernt Gärtnern / ...|Leo Lausemaus|https://is2-ssl.mzstatic.com/image/thumb/Music3/v4/6d/af/89/6daf89c4-f627-989d-407a-88f94eef3172/825646253210.jpg/939x0w.jpg
+# applemusic:album:1038136999|Folge 6: Will nicht teilen / Lernt schwimmen / Mag sich nicht beeilen / Wünscht sich ein Haustier|Leo Lausemaus|https://is2-ssl.mzstatic.com/image/thumb/Music6/v4/56/ac/f4/56acf491-f01d-b1d2-edc2-4ad7f47a692a/825646253166.jpg/939x0w.jpg
+# applemusic:album:1038176873|Folge 7: Geht in den Zirkus / Mag nicht basteln / Will keinen Babysitter / Das Kindergartenfest|Leo Lausemaus|https://is3-ssl.mzstatic.com/image/thumb/Music60/v4/c7/0c/5a/c70c5a97-26bc-cc9f-90a3-5d590a860ddc/mzm.pghwloxp.jpg/939x0w.jpg
+# applemusic:album:1038148297|Folge 8: Will nicht im Kindi übernachten / Mag nicht helfen / Bekommt einen Schulranzen / ...|Leo Lausemaus|https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/b7/fe/11/b7fe1184-feea-e11a-873c-f6e09367fee3/825646252633.jpg/939x0w.jpg
+# applemusic:album:1340438225|Folge 9: Will nicht groß sein / Übernachtet bei Didi / Mag nicht warten / Bekommt ein Baumhaus|Leo Lausemaus|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/04/eb/c6/04ebc6b5-c2dc-764f-2ec9-94f7ea59d2db/190295676438.jpg/939x0w.jpg
+# applemusic:album:1340422826|Folge 10: Will nicht draußen spielen / Geht auf Schatzsuche / Will nicht Tschüss sagen / ...|Leo Lausemaus|https://is4-ssl.mzstatic.com/image/thumb/Music62/v4/fc/d4/48/fcd4486c-18fd-f91c-51c3-b8059aaa5800/190295676407.jpg/939x0w.jpg
+
+
+#########################
+# Amazon Music
+#########################
+# amazonmusic:album:B00QN90QQK|Die 30 besten Faschings- und Karnevalslieder|Simone Sommerland|https://m.media-amazon.com/images/I/61RVyagqM-L._AA256_.jpg
+# amazonmusic:song:B00H95M2SM|Feuerwehrmann Sam|TV Sounds Unlimited||https://evdo8pe.cloudimg.io/s/resizeinbox/400x400/https://images.zentrada-network.eu/kundendaten/00/49/70/49/images/artikel/detail/33obk9e41.jpg
+
+
+#########################
+# Spotify
+#########################
+spotify:album:4jxT7kNMkxJTrvI5nTY7RS|Folge 141: Nachts in der Erfinderwerkstatt|Benjamin Blümchen|https://i.scdn.co/image/44cc0b0d32898c544f1430842ee2cdb2f4dc45f7
+
+
+#########################
+# Library
+#########################
+# lib:album:1000 Forms of Fear|1000 Forms of Fear|Sia|https://img.icons8.com/ios/540/music-library.png
+
+#########################
+# TuneIn
+#########################
+# tunein:play:24896|SWR3|https://img.icons8.com/ios/540/radio.png
+
+#########################
+# Sonos Favorites
+#########################
+# favorite:Chart-Hits|Chart-Hits|https://img.icons8.com/ios/540/star.png
+
+#########################
+# Sonos Playlists
+#########################
+# playlist:Niklas Lieblingslieder|Niklas Lieblingslieder|https://img.icons8.com/ios/540/playlist.png
+
+#########################
+# Common Commands
+#########################
+# cmd:playpause|Abspielen / Pausieren|https://img.icons8.com/ios/540/play-button-circled.png
+# cmd:next|Nächsten Titel abspielen|https://img.icons8.com/ios/540/end.png
+# cmd:previous|Vorherigen Titel abspielen|https://img.icons8.com/ios/540/skip-to-start.png
+# cmd:unqueue|Queue Modus deaktivieren|https://img.icons8.com/540/empty-trash.png
+# cmd:queue|Queue Modus aktivieren|https://img.icons8.com/ios/540/add-list.png
+
+#########################
+# Toggle Commands
+#########################
+# cmd:repeat:all|Alle wiederholen|https://img.icons8.com/ios/540/repeat.png
+# cmd:repeat:one|Titel wiederholen|https://img.icons8.com/ios/540/repeat-one.png
+# cmd:repeat:none|Wiederholen aus|https://img.icons8.com/ios/540/right.png
+# cmd:shuffle:on|Zufällige Wiedergabe einschalten|https://img.icons8.com/ios/540/shuffle.png
+cmd:shuffle:off|Zufällige Wiedergabe ausschalten|https://img.icons8.com/ios/540/personal-video-recorder-menu.png
+# cmd:mute:|Ton aus|https://img.icons8.com/ios/540/no-audio.png
+# cmd:unmute:|Ton an|https://img.icons8.com/ios/540/high-volume.png
+# cmd:volume:+5|Lautstärke +5|https://img.icons8.com/ios/540/speaker.png
+# cmd:volume:-5|Lautstärke -5|https://img.icons8.com/ios/540/low-volume.png
+
+#########################
+# Room Commands
+#########################
+# cmd:room|Büro|https://img.icons8.com/ios/540/mac-client.png
+# cmd:room|Wohnzimmer|https://img.icons8.com/ios/540/living-room.png
+# cmd:room|Küche|https://png.icons8.com/ios/540//dining-room.png
+# cmd:room|Niklas Zimmer|https://img.icons8.com/ios/540/boy.png
+# cmd:room|Bad OG|https://img.icons8.com/ios/540/bath.png
+# cmd:room|Bad EG|https://img.icons8.com/ios/540/shower.png
+# cmd:room|Terasse|https://img.icons8.com/ios/540/house-with-a-garden.png
+
+#########################
+# Say Commands
+#########################
+# cmd:say|Küche|Mama spiel mit mir|https://img.icons8.com/ios/540/speech-bubble-with-dots.png
+# cmd:say|Küche|Komm bitte nach oben|https://img.icons8.com/ios/540/wakeup-hill-on-stairs.png
+

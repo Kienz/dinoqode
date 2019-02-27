@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+}
+
+.card {
+  float: left;
+  border: 1px dashed #999;
+  width: 310px;
+  height: 310px;
+  page-break-inside: avoid;
+}
+
+.art {
+  float: left;
+  width: 155px;
+  height: 155px;
+  object-fit: contain;
+  object-position: center top;
+}
+
+.qrcode {
+  float: left;
+  width: 155px;
+  height: 155px;
+}
+
+.labels {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 6px;
+  width: 135px;
+}
+
+p {
+  color: black;
+  font-family: "Helvetica";
+  font-size: 9pt;
+  width: 100%;
+  margin: 10px 0 0 0;
+  text-align: left;
+}
+
+.song {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 11pt;
+}
+
+.artist {
+  width: 100%;
+  text-align: left;
+}
+
+.album {
+  width: 100%;
+  text-align: left;
+}
+
+.small {
+  color: #999;
+  font-size: 7pt;
+  display: block;
+}
