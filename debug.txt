@@ -1,16 +1,5 @@
-#amazonmusic:album:B00QN90QQK
-applemusic:album:1102373022
-#cmd:queue
-#applemusic:album:1085630938
-#applemusic:album:532053447
-#applemusic:album:1038186713
-#cmd:unqueue
-#applemusic:album:390313595
-
-#tunein:play:24896
-#applemusic:album:1143582073
-#playlist:Niklas Lieblingslieder
-#favorite:Chart-Hits
-#amazonmusic:album:B00QN90QQK
-#cmd:say:Küche:Mama spiel mit mir
-#applemusic:album:1448692024
+#spotify:album:4jxT7kNMkxJTrvI5nTY7RS
+#aldilife:album:372834096
+#aldilife:album:347493214
+aldilife:album:335745550
+#aldilife:song:1459997757

@@ -72,6 +72,11 @@
 # applemusic:album:1408541771|Folge 15: Das Buddel-Kuddel-Muddel|Bob der Baumeister|https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/e9/c3/fc/e9c3fc79-22a8-6311-3b20-1c039bb04478/886446945866.jpg/939x0w.jpg
 # applemusic:album:1417825881|Folge 16: Die allerbeste Weihnachtsfeier|Bob der Baumeister|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/05/95/d8/0595d83c-c108-faa3-1e43-af090196340f/886446945873.jpg/939x0w.jpg
 # applemusic:album:1439429123|Folge 17: Leos Prüfung|Bob der Baumeister|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/62/82/4f/62824f0a-aee5-42ae-4230-eb47be9fcbe8/886446945880.jpg/939x0w.jpg
+applemusic:album:1445696385|Folge 18: Wirbel in der Werkstatt|Bob der Baumeister|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/a2/4a/25/a24a25ab-ef29-2246-12a2-a74ed5fa8a04/886446945897.jpg/939x0w.jpg
+applemusic:album:1458530890|Folge 19: Schreck lass nach! (Die Klassiker)|Bob der Baumeister|https://is4-ssl.mzstatic.com/image/thumb/Music123/v4/58/94/4e/58944e51-53f7-f72b-1cdf-542dd1938e41/886447626061.jpg/939x0w.jpg
+applemusic:album:1458536625|Folge 20: Bobs Team schafft das! (Die Klassiker)|Bob der Baumeister|https://is2-ssl.mzstatic.com/image/thumb/Music123/v4/e1/6a/7f/e16a7f3a-8444-613b-c841-c828e525ca15/886447626078.jpg/939x0w.jpg
+applemusic:album:1458532419|Folge 21: Bobs toller Entwurf (Die Klassiker)|Bob der Baumeister|https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/b7/a6/5a/b7a65a7a-505e-ad72-504e-fb65c29a7d8f/886447626085.jpg/939x0w.jpg
+
 
 # Alben 30 besten ...
 # applemusic:album:532053447|Die 30 besten englischen Kinderlieder|Simone Sommerland|https://is3-ssl.mzstatic.com/image/thumb/Music/v4/7e/75/c4/7e75c487-c14f-907e-852b-9e27b870209d/cover.jpg/939x0w.jpg
@@ -116,10 +121,10 @@
 # applemusic:album:1328652662|04: Weihnachten - Der erste Schnee|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/90/3a/31/903a31f1-48e9-b873-adbe-56d80a18b91b/17UM1IM63871.jpg/939x0w.jpg
 # applemusic:album:1328676384|05: Weihnachten - Pumuckl und die Christbaumkugeln|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/b6/38/92/b6389258-019c-3a5a-80dc-1c168ffbb776/17UM1IM63872.jpg/939x0w.jpg
 # applemusic:album:1328640898|06: Weihnachten Folge - Pumuckl und die Schatulle|Pumuckl|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/8b/f9/1e/8bf91ecf-3ac3-ee8d-b293-9909a1d71a90/17UM1IM63873.jpg/939x0w.jpg
-applemusic:album:1328653004|01: Spuk in der Werkstatt|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/82/43/6b/82436b97-1e47-d6fc-d775-cdd1ef707942/17UM1IM63718.jpg/939x0w.jpg
-applemusic:album:1328670023|02: Das verkaufte Bett|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/10/07/a1/1007a180-5041-5519-c6d7-0a3c0fc1bf5a/17UM1IM63721.jpg/939x0w.jpg
-applemusic:album:1328678324|03: Das neue Badezimmer|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/f6/4f/b6/f64fb6c7-c8f6-7e37-f9de-919b36bd80e5/17UM1IM63722.jpg/939x0w.jpg
-applemusic:album:1328667135|04: Das Schlossgespenst|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/a7/f0/87/a7f087cd-8e68-4e5a-8e38-b42fbab55190/17UM1IM63725.jpg/939x0w.jpg
+# applemusic:album:1328653004|01: Spuk in der Werkstatt|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/82/43/6b/82436b97-1e47-d6fc-d775-cdd1ef707942/17UM1IM63718.jpg/939x0w.jpg
+# applemusic:album:1328670023|02: Das verkaufte Bett|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/10/07/a1/1007a180-5041-5519-c6d7-0a3c0fc1bf5a/17UM1IM63721.jpg/939x0w.jpg
+# applemusic:album:1328678324|03: Das neue Badezimmer|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/f6/4f/b6/f64fb6c7-c8f6-7e37-f9de-919b36bd80e5/17UM1IM63722.jpg/939x0w.jpg
+# applemusic:album:1328667135|04: Das Schlossgespenst|Pumuckl|https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/a7/f0/87/a7f087cd-8e68-4e5a-8e38-b42fbab55190/17UM1IM63725.jpg/939x0w.jpg
 # applemusic:album:1328652999|05: Die abergläubische Putzfrau|Pumuckl|https://is3-ssl.mzstatic.com/image/thumb/Music128/v4/82/db/ac/82dbac05-39ff-2672-bb7b-51e5baeb722b/17UM1IM63726.jpg/939x0w.jpg
 # applemusic:album:1328642348|06: Pumuckl und die Schule|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/b5/4b/15/b54b1564-e431-ddad-8958-2a0efc46bf36/17UM1IM63729.jpg/939x0w.jpg
 # applemusic:album:1328655299|07: Pumuckl macht Ferien (Das Original aus der Fernsehserie)|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/b9/56/94/b95694d6-ddd7-0da0-da41-0b572beb672a/17UM1IM63732.jpg/939x0w.jpg
@@ -198,11 +203,11 @@ applemusic:album:1328667135|04: Das Schlossgespenst|Pumuckl|https://is1-ssl.mzst
 # applemusic:album:1328661247|80: Pumuckl setzt sich nicht durch|Pumuckl|https://is4-ssl.mzstatic.com/image/thumb/Music118/v4/49/68/4e/49684e57-79e6-7971-e8b7-53dc81dcb277/17UM1IM63867.jpg/939x0w.jpg
 
 # Raabe Socke
-applemusic:album:1406330594|Hörspiele zur TV Serie 3: Ritter Sockenherz, Mission: Dreirad, Der falsche Pilz|Der kleine Rabe Socke|https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/f1/35/f4/f135f408-90b1-67e3-101f-dd540acdbf05/4251535722301_3000.jpg/939x0w.jpg
-applemusic:album:1448749527|Der kleine Rabe Socke: Alles Bitte-danke! / Alles Eis! / Socke will alles können und zwar ruckzuck!|Nele Moost|https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d2/4b/f4/d24bf401-f032-f26a-46d9-bcb88d719997/4057664483331_cover.jpg/939x0w.jpg
-applemusic:album:1448837998|Der kleine Rabe Socke: Alles verzankt! / Alles zu voll! / Alles nass!|Nele Moost|https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/9f/cc/3b/9fcc3b4a-fabe-14b6-0725-3dcf468e18e4/4057664483256_cover.jpg/939x0w.jpg
-applemusic:album:1448829017|Der kleine Rabe Socke: Alles gefunden! / Alles gemerkt! / Alles in Ordnung!|Nele Moost|https://is2-ssl.mzstatic.com/image/thumb/Music114/v4/60/66/53/606653e3-5db9-63b6-6e36-11547951a018/4057664484024_cover.jpg/939x0w.jpg
-applemusic:album:1448758126|Der kleine Rabe Socke: Alles rabenstark! / Alles aufgeräumt! / Alles kaputt!|Nele Moost|https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/c1/96/98/c196989e-3b84-d6a3-0f9d-048a428c37b7/4057664484000_cover.jpg/939x0w.jpg
+# applemusic:album:1406330594|Hörspiele zur TV Serie 3: Ritter Sockenherz, Mission: Dreirad, Der falsche Pilz|Der kleine Rabe Socke|https://is2-ssl.mzstatic.com/image/thumb/Music115/v4/f1/35/f4/f135f408-90b1-67e3-101f-dd540acdbf05/4251535722301_3000.jpg/939x0w.jpg
+# applemusic:album:1448749527|Der kleine Rabe Socke: Alles Bitte-danke! / Alles Eis! / Socke will alles können und zwar ruckzuck!|Nele Moost|https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d2/4b/f4/d24bf401-f032-f26a-46d9-bcb88d719997/4057664483331_cover.jpg/939x0w.jpg
+# applemusic:album:1448837998|Der kleine Rabe Socke: Alles verzankt! / Alles zu voll! / Alles nass!|Nele Moost|https://is3-ssl.mzstatic.com/image/thumb/Music114/v4/9f/cc/3b/9fcc3b4a-fabe-14b6-0725-3dcf468e18e4/4057664483256_cover.jpg/939x0w.jpg
+# applemusic:album:1448829017|Der kleine Rabe Socke: Alles gefunden! / Alles gemerkt! / Alles in Ordnung!|Nele Moost|https://is2-ssl.mzstatic.com/image/thumb/Music114/v4/60/66/53/606653e3-5db9-63b6-6e36-11547951a018/4057664484024_cover.jpg/939x0w.jpg
+# applemusic:album:1448758126|Der kleine Rabe Socke: Alles rabenstark! / Alles aufgeräumt! / Alles kaputt!|Nele Moost|https://is5-ssl.mzstatic.com/image/thumb/Music114/v4/c1/96/98/c196989e-3b84-d6a3-0f9d-048a428c37b7/4057664484000_cover.jpg/939x0w.jpg
 #
 #
 # applemusic:album:1019129075|Der kleine Rabe Socke II (Das große Rennen) [feat. Jan Delay]|Alex Komlew|https://is2-ssl.mzstatic.com/image/thumb/Music1/v4/74/aa/51/74aa5134-bdbc-cfd1-d5eb-8befdbb2a710/cover.jpg/939x0w.jpg
@@ -218,10 +223,10 @@ applemusic:album:1448758126|Der kleine Rabe Socke: Alles rabenstark! / Alles auf
 # applemusic:album:1448814646|Der kleine Rabe Socke: Alles gefärbt! / Alles wächst! / Alles verwünscht!|Nele Moost|https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/d3/e3/c9/d3e3c958-811c-cc80-3aa2-d8e5144c7820/4057664483294_cover.jpg/939x0w.jpg
 
 # Leo Lausemaus
-applemusic:album:1038173200|Folge 1: Will nicht essen / Sagt nicht die Wahrheit / Hat schlechte Laune / Will nicht schlafen|Leo Lausemaus|https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/b8/44/99/b84499a8-5101-81d8-d98a-b539b490d6e8/825646429523.jpg/939x0w.jpg
-applemusic:album:1038084918|Folge 2: Will nicht in den Kindi / Mama geht zur Arbeit / Allein bei den großeltern / ...|Leo Lausemaus|https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/0d/b6/60/0db66041-7a53-74b8-ebcc-77f90a609fe1/825646429516.jpg/939x0w.jpg
-applemusic:album:1038096044|Folge 3: Will sich nicht die Zähne putzen / Hat Geburtstag / Will nicht verreisen / ...|Leo Lausemaus|https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/78/67/46/78674614-93b0-957b-633d-2bca43b066ae/825646296125.jpg/939x0w.jpg
-applemusic:album:1038181251|Folge 4: Will nicht baden / Mag nicht umziehen / Kann nicht verlieren / Auf zum Sport|Leo Lausemaus|https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/92/76/a9/9276a9c4-d299-3e24-8d46-1da0e1c338ed/825646296071.jpg/939x0w.jpg
+# applemusic:album:1038173200|Folge 1: Will nicht essen / Sagt nicht die Wahrheit / Hat schlechte Laune / Will nicht schlafen|Leo Lausemaus|https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/b8/44/99/b84499a8-5101-81d8-d98a-b539b490d6e8/825646429523.jpg/939x0w.jpg
+# applemusic:album:1038084918|Folge 2: Will nicht in den Kindi / Mama geht zur Arbeit / Allein bei den großeltern / ...|Leo Lausemaus|https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/0d/b6/60/0db66041-7a53-74b8-ebcc-77f90a609fe1/825646429516.jpg/939x0w.jpg
+# applemusic:album:1038096044|Folge 3: Will sich nicht die Zähne putzen / Hat Geburtstag / Will nicht verreisen / ...|Leo Lausemaus|https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/78/67/46/78674614-93b0-957b-633d-2bca43b066ae/825646296125.jpg/939x0w.jpg
+# applemusic:album:1038181251|Folge 4: Will nicht baden / Mag nicht umziehen / Kann nicht verlieren / Auf zum Sport|Leo Lausemaus|https://is5-ssl.mzstatic.com/image/thumb/Music3/v4/92/76/a9/9276a9c4-d299-3e24-8d46-1da0e1c338ed/825646296071.jpg/939x0w.jpg
 #
 #
 # applemusic:album:1038173238|Folge 5: Sein erster Wackelzahl / Besucht den Bäckermeister / Lernt Gärtnern / ...|Leo Lausemaus|https://is2-ssl.mzstatic.com/image/thumb/Music3/v4/6d/af/89/6daf89c4-f627-989d-407a-88f94eef3172/825646253210.jpg/939x0w.jpg
@@ -242,7 +247,7 @@ applemusic:album:1038181251|Folge 4: Will nicht baden / Mag nicht umziehen / Kan
 #########################
 # Spotify
 #########################
-spotify:album:4jxT7kNMkxJTrvI5nTY7RS|Folge 141: Nachts in der Erfinderwerkstatt|Benjamin Blümchen|https://i.scdn.co/image/44cc0b0d32898c544f1430842ee2cdb2f4dc45f7
+# spotify:album:4jxT7kNMkxJTrvI5nTY7RS|Folge 141: Nachts in der Erfinderwerkstatt|Benjamin Blümchen|https://i.scdn.co/image/44cc0b0d32898c544f1430842ee2cdb2f4dc45f7
 
 
 #########################
@@ -281,7 +286,7 @@ spotify:album:4jxT7kNMkxJTrvI5nTY7RS|Folge 141: Nachts in der Erfinderwerkstatt|
 # cmd:repeat:one|Titel wiederholen|https://img.icons8.com/ios/540/repeat-one.png
 # cmd:repeat:none|Wiederholen aus|https://img.icons8.com/ios/540/right.png
 # cmd:shuffle:on|Zufällige Wiedergabe einschalten|https://img.icons8.com/ios/540/shuffle.png
-cmd:shuffle:off|Zufällige Wiedergabe ausschalten|https://img.icons8.com/ios/540/personal-video-recorder-menu.png
+# cmd:shuffle:off|Zufällige Wiedergabe ausschalten|https://img.icons8.com/ios/540/personal-video-recorder-menu.png
 # cmd:mute:|Ton aus|https://img.icons8.com/ios/540/no-audio.png
 # cmd:unmute:|Ton an|https://img.icons8.com/ios/540/high-volume.png
 # cmd:volume:+5|Lautstärke +5|https://img.icons8.com/ios/540/speaker.png

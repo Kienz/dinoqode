@@ -216,7 +216,7 @@ def generate_cards():
 
         if line.startswith('cmd:'):
             (song, album, artist) = process_command(line, index)
-        elif line.startswith('applemusic:') or line.startswith('amazonmusic:') or line.startswith('spotify:') or line.startswith('lib:') :
+        elif any(line in s for s in ['applemusic:', 'amazonmusic:', 'spotify:', 'aldilife:', 'napster:', 'lib:']) :
             (song, album, artist) = process_track(line, index)
         elif line.startswith('tunein:'):
             (song, album, artist) = process_tunein(line, index)

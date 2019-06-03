@@ -205,6 +205,16 @@ def handle_library_item(qrcode):
     perform_room_request('musicsearch/library/{0}/{1}'.format(action, urllib.quote(search)), current_device)
 
 
+def handle_spotify_item(qrcode):
+    print('PLAYING FROM SPOTIFY: ' + qrcode)
+
+    if current_mode == Mode.BUILD_QUEUE:
+        action = 'queue'
+    else:
+        action = 'now'
+
+    perform_room_request('spotify/{0}/{1}'.format(action, qrcode.replace('spotify:', '')), current_device)
+
 def handle_applemusic_item(qrcode):
     print('PLAYING FROM APPLE MUSIC: ' + qrcode)
 
@@ -226,6 +236,25 @@ def handle_amazonmusic_item(qrcode):
 
     perform_room_request('amazonmusic/{0}/{1}'.format(action, qrcode.replace('amazonmusic:', '')), current_device)
 
+def handle_aldilife_item(qrcode):
+    print('PLAYING FROM ALDI LIFE (NAPSTER): ' + qrcode)
+
+    if current_mode == Mode.BUILD_QUEUE:
+        action = 'queue'
+    else:
+        action = 'now'
+
+    perform_room_request('napster/{0}/{1}'.format(action, qrcode.replace('aldilife:', '')), current_device)
+
+def handle_napster_item(qrcode):
+    print('PLAYING FROM NAPSTER: ' + qrcode)
+
+    if current_mode == Mode.BUILD_QUEUE:
+        action = 'queue'
+    else:
+        action = 'now'
+
+    perform_room_request('napster/{0}/{1}'.format(action, qrcode.replace('napster:', '')), current_device)
 
 def handle_favorite_playlist_item(qrcode):
     print('PLAYING FROM SONOS FAVORITE/PLAYLIST: ' + qrcode)
@@ -261,6 +290,12 @@ def handle_qrcode(qrcode):
         handle_applemusic_item(qrcode)
     elif qrcode.startswith('amazonmusic:'):
         handle_amazonmusic_item(qrcode)
+    elif qrcode.startswith('spotify:'):
+        handle_spotify_item(qrcode)
+    elif qrcode.startswith('napster:'):
+        handle_napster_item(qrcode)
+    elif qrcode.startswith('aldilife:'):
+        handle_aldilife_item(qrcode)
     elif qrcode.startswith('favorite:') or qrcode.startswith('playlist:'):
         handle_favorite_playlist_item(qrcode)
     elif qrcode.startswith('tunein:'):

@@ -11,7 +11,8 @@ function createDinoqodeCommand(type, service) {
     var services = {
             'amazonmusic': /.*music\.amazon\..*/,
             'applemusic': /.*\.apple\.com.*/,
-            'spotify': /.*\.spotify\.com.*/
+            'spotify': /.*\.spotify\.com.*/,
+            'aldilife': /.*\.lifestore-flat\.de.*/
         },
         url = location.href,
         cmd,
@@ -60,6 +61,11 @@ function createDinoqodeCommand(type, service) {
             arturl = temp.match(/url\("(.*)"\)/)[1];
         }
 
+    } else if (service === 'aldilife') {
+        id = document.querySelector('.blurred-image .image').style.backgroundImage.match(/url\(".*images\/Alb\.(.*)\/.*"\)/)[1];
+        title = document.querySelector('.album-title').innerText;
+        artist = document.querySelector('.artist-name').innerText;
+        arturl = document.querySelector('.blurred-image .image').style.backgroundImage.match(/url\("(.*)"\)/)[1];
     }
 
     if (!id) {
