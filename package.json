@@ -1,0 +1,26 @@
+{
+  "name": "dinoqode",
+  "version": "1.0.0",
+  "description": "A kid-friendly system for controlling Sonos® with QR codes.",
+  "main": "card_creator.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kienz/dinoqode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kienz/dinoqode/issues"
+  },
+  "homepage": "https://github.com/Kienz/dinoqode#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "marked": "^0.6.2"
+  }
+}

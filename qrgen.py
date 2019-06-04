@@ -192,7 +192,7 @@ def generate_cards():
     # Copy the CSS file into the output directory.  (Note the use of 'page-break-inside: avoid'
     # in `cards.css`; this prevents the card divs from being spread across multiple pages
     # when printed.)
-    shutil.copyfile('cards.css', 'out/cards.css')
+    shutil.copyfile('cards/cards.css', 'out/cards.css')
 
     # Begin the HTML template
     html = '''
@@ -224,7 +224,7 @@ def generate_cards():
             (song, album, artist) = process_playlist_favorite(line, index)
         else:
             print('Failed to handle URI: ' + line)
-            exit(1)
+            continue
 
         # Append the HTML for this card
         html += '<div class="card">\n'
