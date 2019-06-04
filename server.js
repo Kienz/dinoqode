@@ -25,12 +25,30 @@ app.get('/creator', (req, res) => {
 app.post('/create', (req, res) => {
     const { spawn } = require('child_process');
 
-    if (fs.existsSync('tmp/cards.txt')) {
-        fs.renameSync('tmp/cards.txt', 'tmp/_archive/cards_' + (new Date()).toISOString() + '.txt');
+    if (fs.existsSync(__dirname + '/tmp/cards.txt')) {
+        try {
+            fs.mkdirSync(__dirname + '/tmp/_archive');
+        } catch (e) {
+            if (e.code !== 'EEXIST') {
+                console.log('Cannot create directory', e);
+                return res.end();
+            }
+        }
+
+        fs.renameSync(__dirname + '/tmp/cards.txt', __dirname + '/tmp/_archive/cards_' + (new Date()).toISOString() + '.txt');
     }
 
-    try{
-        fs.writeFileSync('tmp/cards.txt', req.body.commands);
+    try {
+        fs.mkdirSync(__dirname + '/tmp');
+    } catch (e) {
+        if (e.code !== 'EEXIST') {
+            console.log('Cannot create directory', e);
+            return res.end();
+        }
+    }
+
+    try {
+        fs.writeFileSync(__dirname + '/tmp/cards.txt', req.body.commands);
     } catch (e){
         console.log('Cannot write file', e);
         return res.end();
