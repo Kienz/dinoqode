@@ -8,10 +8,10 @@ const fs = require('fs');
 app.use('/', router);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('out'));
-app.use('/docs', express.static('docs'));
-app.use('/cards', express.static('cards'));
-app.use(express.static('site'));
+app.use(express.static(__dirname +  '/out'));
+app.use('/docs', express.static(__dirname + '/docs'));
+app.use('/cards', express.static(__dirname +  '/cards'));
+app.use(express.static(__dirname + '/site'));
 
 
 router.get('/', (req, res) => {

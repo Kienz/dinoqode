@@ -57,13 +57,36 @@ Before inserting the microSD card to the Raspberry Pi follow step 3  (Enable SSH
 I built this using a Raspberry Pi 3 Model B+ (running Raspbian) and one of the listed camera modules (testet with both).
 Things may or may not work with other models (for example, how you control the onboard LEDs varies by model).
 
-To set up the camera module, I had to add an entry in `/etc/modules`:
+Set up the camera module:
 
 ```
-% echo "bcm2835-v4l2" | sudo tee -a /etc/modules
-% sudo reboot
-# After reboot, verify that camera is present
-% ls -l /dev/video0
+% sudo raspi-config
+# Select "5 Interface Options"
+# Select "P1 Camera" and choose "Yes"
+# Reboot
+```
+
+Set up Wi-fi:
+
+```
+% sudo raspi-config
+# Select "2 Network Options"
+# Select "N2 Wi-fi" and follow the instructions
+```
+
+Update modules on Raspberry PI:
+
+```
+% sudo apt-get update
+```
+
+Install Node.js and NPM on Raspberry PI:
+
+```
+% sudo apt-get install nodejs npm
+% sudo npm install -g npm@latest
+% sudo npm install -g n
+% sudo n stable
 ```
 
 Next, install `zbar-tools` (used to scan for QR codes) and test it out:
@@ -82,6 +105,7 @@ It's possible to run `node-sonos-http-api` directly on the Raspberry Pi, so that
 To install check out the `node-sonos-http-api` and start it:
 
 ```
+% mkdir ~/Developer
 % cd ~/Developer
 % git clone https://github.com/Kienz/node-sonos-http-api.git
 % cd node-sonos-http-api
@@ -111,14 +135,21 @@ You can install it on a NAS too. I installed it on my QNAP NAS with a [Docker® 
 First, clone the `dinoqode` repo if you haven't already on your primary computer:
 
 ```
+% cd ~/Developer
 % git clone https://github.com/Kienz/dinoqode
 % cd dinoqode
 ```
 
-Also install `qrencode` via Homebrew:
+Install Homebrew:
 
 ```
-% brew install qrencode
+% sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+```
+
+Also install `qrencode`:
+
+```
+% sudo apt-get install qrencode
 ```
 
 Next, create a text file that lists the different cards you want to create.  (See `example.txt` for some possibilities.)
@@ -147,7 +178,7 @@ First run `npm install` on the root folder of the dinoqode repo.
 % npm install
 ```
 
-Next, run `node server.js` and open `localhost:5006` in your browser. On the Dinoqode site you can print basic command cards and generate new cards.
+Next, run `node server.js` and open `<IP-RaspberryPI>:5006` in your browser. On the Dinoqode site you can print basic command cards and generate new cards.
 
 ### 5. Start `qrplay.py`
 
@@ -169,6 +200,11 @@ If you want to use your own `dinoqode` as a standalone thing (not attached to a 
 
 ```
 % mkdir ~/Developer/logs
+% cd logs
+% echo > dinoqode.log
+% echo > server.log
+% echo > node-sonos-http-api.log
+% chmod -R +w .
 ```
 
 ```
