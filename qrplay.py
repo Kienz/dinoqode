@@ -390,7 +390,6 @@ else:
     except KeyboardInterrupt:
         print('Stopping scanner...')
         blink_led('pulse-red')
-        blink_led_kill(blinkt_subp)
     finally:
         print('Closed')
         if use_blinkt == True:
