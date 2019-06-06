@@ -102,35 +102,19 @@ def speak(phrase, room=None):
     perform_room_request('say/' + urllib.quote(phrase) + '/de', room)
 
 # Flash led lights (onboard or Blinkt! leds)
-def blink_led():
+def blink_led(type):
     if use_blinkt == True:
-        # Causes the Blinkt! led bar to pulse 4 seconds.
-        blinkt_subp = subprocess.Popen(["python3", os.path.join(current_dir, "blinkt_led.py"), "--brightness", "1", "--color", "0,128,0" if last_qrcode_success else "255,0,0"])
+        # Causes the Blinkt! led bar to blink
+        if type == 'pulse':
+            blinkt_subp = subprocess.Popen(["python3", os.path.join(current_dir, "blinkt_led_pulse.py"), "--brightness", "1", "--color", "0,128,0" if last_qrcode_success else "255,0,0"])
+        elif type == 'rainbow':
+            blinkt_subp = subprocess.Popen(["python3", os.path.join(current_dir, "blinkt_led_rainbow.py")])
+
         sleep(4)
         blinkt_subp.kill()
         sleep(0.1)
         blinkt.clear()
         blinkt.show()
-    else:
-        # Causes the onboard green led to blink on and off twice.
-        duration = 0.15
-
-        def led_off():
-            subprocess.call("echo 0 > /sys/class/leds/led0/brightness", shell=True)
-
-        def led_on():
-            subprocess.call("echo 1 > /sys/class/leds/led0/brightness", shell=True)
-
-        # Technically we only need to do this once when the script launches
-        subprocess.call("echo none > /sys/class/leds/led0/trigger", shell=True)
-
-        led_on()
-        sleep(duration)
-        led_off()
-        sleep(duration)
-        led_on()
-        sleep(duration)
-        led_off()
 
 # Handling QR command
 # If QR code is defined the Blinkt! led bar is flashing green otherwise red
@@ -306,7 +290,7 @@ def handle_qrcode(qrcode):
         last_qrcode_success = False
 
     if not args.debug_file:
-        blink_led()
+        blink_led('pulse')
 
     if last_qrcode_success:
         last_qrcode = qrcode
@@ -396,6 +380,9 @@ if args.debug_file:
 else:
     # Start the QR code reader
     p = subprocess.Popen('/usr/bin/zbarcam --prescale=500x500 --nodisplay', shell=True, stdout=subprocess.PIPE)
+    if use_blinkt == True:
+        blink_led('rainbow')
+
     try:
         start_scan()
     except KeyboardInterrupt:
