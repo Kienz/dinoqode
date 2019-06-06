@@ -216,8 +216,8 @@ If you want to use your own `dinoqode` as a standalone thing (not attached to a 
 
 su pi -c "npm start --prefix /home/pi/Developer/node-sonos-http-api/ > /home/pi/Developer/logs/node-sonos-http-api.log &"
 su pi -c "node /home/pi/Developer/dinoqode/server.js > /home/pi/Developer/logs/server.log &"
-#sleep 12
-su pi -c "stdbuf -oL python3 /home/pi/Developer/dinoqode/qrplay.py --hostname 0.0.0.0 --default-device \"xyz\" --default-volume 25 --skip-load > /home/pi/Developer/logs/dinoqode.log &"
+sleep 12
+stdbuf -oL python3 /home/pi/Developer/dinoqode/qrplay.py --hostname 0.0.0.0 --default-device "xyz" --default-volume 25 --skip-load > /home/pi/Developer/logs/dinoqode.log &
 ```
 
 ```
