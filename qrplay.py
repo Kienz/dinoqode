@@ -52,8 +52,6 @@ arg_parser.add_argument('--speak-welcome', action='store_true', help='should din
 args = arg_parser.parse_args()
 print(args)
 
-blink_led('rainbow')
-
 # Call http request
 def perform_request(url):
     global last_qrcode_success
@@ -108,18 +106,17 @@ def blink_led(type):
     if use_blinkt == True:
         # Causes the Blinkt! led bar to blink
         if type == 'pulse-green':
-            blinkt_subp = subprocess.Popen(["python3", os.path.join(current_dir, "blinkt_led_pulse.py"), "--brightness", "1", "--color", "255,0,0"])
+            blinkt_subp = subprocess.Popen(["python3", os.path.join(current_dir, "blinkt_led_pulse.py"), "--brightness", "1", "--color", "0,128,0"])
             sleep(4)
         elif type == 'pulse-red':
-            blinkt_subp = subprocess.Popen(["python3", os.path.join(current_dir, "blinkt_led_pulse.py"), "--brightness", "1", "--color", "0,128,0"])
+            blinkt_subp = subprocess.Popen(["python3", os.path.join(current_dir, "blinkt_led_pulse.py"), "--brightness", "1", "--color", "255,0,0"])
             sleep(4)
         elif type == 'rainbow':
             blinkt_subp = subprocess.Popen(["python3", os.path.join(current_dir, "blinkt_led_rainbow.py")])
+            sleep(4)
 
-def blink_led_kill():
-    if use_blinkt == True:
         blinkt_subp.kill()
-        #sleep(0.1)
+        sleep(0.1)
         blinkt.clear()
         blinkt.show()
 
@@ -299,11 +296,9 @@ def handle_qrcode(qrcode):
     if last_qrcode_success:
         last_qrcode = qrcode
         blink_led('pulse-green')
-        blink_led_kill()
     else:
         last_qrcode = ''
         blink_led('pulse-red')
-        blink_led_kill()
 
 
 # Monitor the output of the QR code scanner.
@@ -390,14 +385,12 @@ else:
     p = subprocess.Popen('/usr/bin/zbarcam --prescale=500x500 --nodisplay', shell=True, stdout=subprocess.PIPE)
 
     try:
-        blink_led_kill()
+        blink_led('rainbow')
         start_scan()
-        blink_led('pulse-green')
-        blink_led_kill()
     except KeyboardInterrupt:
         print('Stopping scanner...')
         blink_led('pulse-red')
-        blink_led_kill()
+        blink_led_kill(blinkt_subp)
     finally:
         print('Closed')
         if use_blinkt == True:
