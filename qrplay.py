@@ -33,7 +33,6 @@ import urllib.request
 import http.client
 import re
 import traceback
-import asyncio
 
 try:
     use_blinkt = True
@@ -52,16 +51,6 @@ arg_parser.add_argument('--debug-file', help='read commands from a file instead 
 arg_parser.add_argument('--speak-welcome', action='store_true', help='should dinoqode speak welcome messages on startup', default=False)
 args = arg_parser.parse_args()
 print(args)
-
-class Mode:
-    PLAY_AND_CLEAR = 1
-    BUILD_QUEUE = 2
-
-last_qrcode = None
-last_qrcode_success = None
-current_dir = None
-base_url = ''
-current_mode = Mode.PLAY_AND_CLEAR
 
 # Call http request
 def perform_request(url):
@@ -112,22 +101,22 @@ def speak(phrase, room=None):
     print('SPEAKING: \'{0}\''.format(phrase))
     perform_room_request('say/' + urllib.quote(phrase) + '/de', room)
 
-# Flash Blinkt! leds
-async def blink_led(type):
+# Flash led lights (onboard or Blinkt! leds)
+def blink_led(type):
     if use_blinkt == True:
         # Causes the Blinkt! led bar to blink
         if type == 'pulse-green':
             blinkt_subp = subprocess.Popen(["python3", os.path.join(current_dir, "blinkt_led_pulse.py"), "--brightness", "1", "--color", "0,128,0"])
-            await asyncio.sleep(4)
+            sleep(4)
         elif type == 'pulse-red':
             blinkt_subp = subprocess.Popen(["python3", os.path.join(current_dir, "blinkt_led_pulse.py"), "--brightness", "1", "--color", "255,0,0"])
-            await asyncio.sleep(4)
+            sleep(4)
         elif type == 'rainbow':
             blinkt_subp = subprocess.Popen(["python3", os.path.join(current_dir, "blinkt_led_rainbow.py")])
-            await asyncio.sleep(10)
+            sleep(4)
 
         blinkt_subp.kill()
-        await asyncio.sleep(0.1)
+        sleep(0.1)
         blinkt.clear()
         blinkt.show()
 
@@ -271,7 +260,7 @@ def handle_tunein_item(qrcode):
     perform_room_request('{0}/{1}/{2}'.format(split[0], split[1], split[2]), current_device)
 
 
-async def handle_qrcode(qrcode):
+def handle_qrcode(qrcode):
     global last_qrcode
     global last_qrcode_success
 
@@ -306,16 +295,16 @@ async def handle_qrcode(qrcode):
 
     if last_qrcode_success:
         last_qrcode = qrcode
-        await blink_led('pulse-green')
+        blink_led('pulse-green')
     else:
         last_qrcode = ''
-        await blink_led('pulse-red')
+        blink_led('pulse-red')
 
 
 # Monitor the output of the QR code scanner.
-async def start_scan(process):
+def start_scan():
     while True:
-        data = process.stdout.readline()
+        data = p.stdout.readline()
 
         if data:
             data = data.decode('utf-8').encode('sjis').decode('utf-8')
@@ -323,11 +312,11 @@ async def start_scan(process):
         qrcode = str(data)[8:]
         if qrcode:
             qrcode = qrcode.rstrip()
-            await handle_qrcode(qrcode)
+            handle_qrcode(qrcode)
 
 
 # Read from the `debug.txt` file and handle one code at a time.
-async def read_debug_script():
+def read_debug_script():
     # Read codes from `debug.txt`
     with open(args.debug_file) as f:
         debug_codes = f.readlines()
@@ -338,77 +327,74 @@ async def read_debug_script():
         code = code.split("#")[0]
         code = code.strip()
         if code:
-            await handle_qrcode(code)
+            handle_qrcode(code)
             sleep(10)
 
-# Main program
-async def main():
-    global base_url
 
-    # Load the most recently used device, if available, otherwise fall back on the `default-device` argument
+# #############################################################################
+# Startup program
+# #############################################################################
+class Mode:
+    PLAY_AND_CLEAR = 1
+    BUILD_QUEUE = 2
+
+# Load the most recently used device, if available, otherwise fall back on the `default-device` argument
+try:
+    with open('.last-device', 'r') as device_file:
+        current_device = device_file.read().replace('\n', '')
+        print('Defaulting to last used room: ' + current_device)
+except:
+    current_device = args.default_device
+    print('Initial room: ' + current_device)
+
+# Keep track of the last-seen code
+last_qrcode = ''
+last_qrcode_success = True
+
+base_url = 'http://' + args.hostname + ':5005'
+current_mode = Mode.PLAY_AND_CLEAR
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+perform_room_request('pause', current_device)
+perform_room_request('volume/' + args.default_volume, current_device)
+
+if args.speak_welcome:
+    speak('Hallo, ich bin dinoqode.')
+
+if not args.skip_load:
+    # Preload library on startup (it takes a few seconds to prepare the cache)
+    print('Indexing the library...')
+    if args.speak_welcome:
+        speak('Musik Bibliothek indizieren')
+
+    perform_room_request('musicsearch/library/load', current_device)
+    print('Indexing complete!')
+
+    if args.speak_welcome:
+        speak('Jetzt bin ich bereit!')
+
+if args.speak_welcome:
+    speak('Zeig mir eine Karte!')
+
+
+if args.debug_file:
+    # Run through a list of codes from a local file
+    read_debug_script()
+else:
+    # Start the QR code reader
+    p = subprocess.Popen('/usr/bin/zbarcam --prescale=500x500 --nodisplay', shell=True, stdout=subprocess.PIPE)
+
     try:
-        with open('.last-device', 'r') as device_file:
-            current_device = device_file.read().replace('\n', '')
-            print('Defaulting to last used room: ' + current_device)
-    except:
-        current_device = args.default_device
-        print('Initial room: ' + current_device)
+        blink_led('rainbow')
+        start_scan()
+    except KeyboardInterrupt:
+        print('Stopping scanner...')
+        blink_led('pulse-red')
+    finally:
+        print('Closed')
+        if use_blinkt == True:
+            blinkt.clear()
+            blinkt.show()
 
-    # Keep track of the last-seen code
-    last_qrcode = ''
-    last_qrcode_success = True
-
-    base_url = 'http://' + args.hostname + ':5005'
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-
-    perform_room_request('pause', current_device)
-    perform_room_request('volume/' + args.default_volume, current_device)
-
-    if args.speak_welcome:
-        speak('Hallo, ich bin dinoqode.')
-
-    if not args.skip_load:
-        # Preload library on startup (it takes a few seconds to prepare the cache)
-        print('Indexing the library...')
-        if args.speak_welcome:
-            speak('Musik Bibliothek indizieren')
-
-        perform_room_request('musicsearch/library/load', current_device)
-        print('Indexing complete!')
-
-        if args.speak_welcome:
-            speak('Jetzt bin ich bereit!')
-
-    if args.speak_welcome:
-        speak('Zeig mir eine Karte!')
-
-
-    if args.debug_file:
-        # Run through a list of codes from a local file
-        await read_debug_script()
-    else:
-        # Start the QR code reader
-        p = subprocess.Popen('/usr/bin/zbarcam --prescale=500x500 --nodisplay', shell=True, stdout=subprocess.PIPE)
-
-        try:
-            task_blink_led = asyncio.create_task(
-                blink_led('rainbow'))
-
-            task_start_scan = asyncio.create_task(
-                start_scan(p))
-
-            await task_blink_led
-            await task_start_scan
-        except KeyboardInterrupt:
-            print('Stopping scanner...')
-            await blink_led('pulse-red')
-        finally:
-            print('Closed')
-            if use_blinkt == True:
-                blinkt.clear()
-                blinkt.show()
-
-            traceback.print_exc()
-            p.kill()
-
-asyncio.run(main())
+        traceback.print_exc()
+        p.kill()
