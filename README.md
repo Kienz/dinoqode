@@ -89,9 +89,11 @@ Install Node.js and NPM on Raspberry PI:
 % sudo n stable
 ```
 
-Next, install `zbar-tools` (used to scan for QR codes) and test it out:
+Next, install some python3 packages: `pip3`,  `asyncio` and `zbar-tools` (used to scan for QR codes):
 
 ```
+% sudo apt-get install python3-pip
+% sudo pip3 install asyncio
 % sudo apt-get install zbar-tools
 ```
 
@@ -140,12 +142,6 @@ First, clone the `dinoqode` repo if you haven't already on your primary computer
 % cd dinoqode
 ```
 
-Install Homebrew:
-
-```
-% sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-```
-
 Also install `qrencode`:
 
 ```
@@ -180,7 +176,7 @@ First run `npm install` on the root folder of the dinoqode repo.
 
 Next, run `node server.js` and open `<IP-RaspberryPI>:5006` in your browser. On the Dinoqode site you can print basic command cards and generate new cards.
 
-### 5. Start `qrplay.py`
+### 5. Start Dinoqode
 
 On your Raspberry Pi, clone this `dinoqode` repo:
 
@@ -190,7 +186,8 @@ On your Raspberry Pi, clone this `dinoqode` repo:
 % cd dinoqode
 ```
 
-Then, launch `qrplay`, specifying the hostname of the machine running `node-sonos-http-api`:
+Then, launch `qrplay`, specifying the hostname of the machine running `node-sonos-http-api`.
+If you run `node-sonos-http-api` on the same Raspberry PI the hostname is 0.0.0.0.
 
 ```
 % python3 qrplay.py --hostname 0.0.0.0 --default-device "xyz" --default-volume 25 --skip-load
@@ -228,9 +225,10 @@ Now you have to insert `/usr/local/bin/dinoqode.sh` into `/etc/rc.local`.
 
 ```
 % sudo nano /etc/rc.local
+# Add `./usr/local/bin/dinoqode.sh` to rc.local
 ```
 
-After that `node-sonos-http-api`, `dinoqode` and `server` should start after reboot. After some seconds the red light on the camera should turn on.
+After that `node-sonos-http-api`, `dinoqode` and `server` should start after reboot. After some seconds the red light on the camera (only on V1.3) should turn on. The Blinkt! led shows rainbow colors if the Dinoqode is ready to use.
 
 To see what happens you can look inside the log files `dinoqode.log`, `node-sonos-http-api.log` or `server.log`.
 
@@ -238,8 +236,13 @@ To see what happens you can look inside the log files `dinoqode.log`, `node-sono
 % tail -F ~/Developer/logs/dinoqode.log
 ```
 
+#### 5.1 Important URLS
 
-### 6. Use Blink! led bar to display success/failure of commands
+* [Dinoqode Server / Card Creator](<IP-RaspberryPI>:5006)
+* [node-sonos-http-api](<IP-RaspberryPI or other server IP>:5005)
+
+
+### 6. Use Blinkt! led bar to display success/failure of commands
 
 Some commands have no output and it's hard to know if the command works or not. Therefore you can add the Blinkt! led bar to you Raspberry Pi.
 
@@ -251,7 +254,7 @@ _The pins on the Pi connect to the holes in the header on the back of the Blinkt
 
 After placing the Blinkt! on your Raspberry Pi you have to install the Blinkt! library.
 ```
-curl https://get.pimoroni.com/blinkt | bash
+% sudo apt-get install python3-blinkt
 ```
 
 The `dinoqode` now uses the Blinkt! led to show succesful commands with green light and failure commands with red light.
