@@ -140,12 +140,6 @@ First, clone the `dinoqode` repo if you haven't already on your primary computer
 % cd dinoqode
 ```
 
-Install Homebrew:
-
-```
-% sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-```
-
 Also install `qrencode`:
 
 ```
