@@ -4,7 +4,7 @@ body {
 
 body.duplex {
   margin: 0 auto;
-  width: 748px;
+  width: 628px;
 }
 
 .card {
@@ -19,7 +19,7 @@ body.duplex {
 .duplex .card {
   width: 155px;
   position: relative;
-  margin: 15px;
+  margin: 0;
 }
 
 .duplex .qrcode {
