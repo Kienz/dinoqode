@@ -2,12 +2,61 @@ body {
   margin: 0;
 }
 
+body.duplex {
+  margin: 0 auto;
+  width: 748px;
+}
+
 .card {
   float: left;
   border: 1px dashed #999;
   width: 310px;
   height: 310px;
   page-break-inside: avoid;
+  position: relative;
+}
+
+.duplex .card {
+  width: 155px;
+  position: relative;
+  margin: 15px;
+}
+
+.duplex .qrcode {
+  display: none;
+}
+
+.duplex .back {
+  float: none;
+  page-break-before: always;
+}
+
+.duplex .back .card .qrcode {
+  display: block !important;
+}
+
+.duplex .back .art {
+  display: none;
+}
+
+.duplex .back .track-info {
+  display: none;
+}
+
+.duplex .back .song {
+  font-size: 8pt;
+}
+
+.duplex .music-service {
+  display: none;
+}
+
+.duplex .back .card .music-service {
+  display: block !important;
+}
+
+.duplex .back .card {
+  float: right;
 }
 
 .art {
@@ -30,6 +79,12 @@ body {
   margin-right: 10px;
   margin-top: 6px;
   width: 135px;
+}
+
+.labels.music-service {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 p {
@@ -55,6 +110,14 @@ p {
 .album {
   width: 100%;
   text-align: left;
+}
+
+.logo {
+  max-width: 50px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  max-height: 30px;
 }
 
 .small {

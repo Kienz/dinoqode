@@ -34,6 +34,7 @@ import re
 arg_parser = argparse.ArgumentParser(description='Generates an HTML page containing cards with embedded QR codes that can be interpreted by `qrplay`.')
 arg_parser.add_argument('--input', help='the file containing the list of commands and songs to generate')
 arg_parser.add_argument('--generate-images', action='store_true', help='generate an individual PNG image for each card')
+arg_parser.add_argument('--print-dublex', action='store_true', help='generate cards optimized for duplex print', default=False)
 args = arg_parser.parse_args()
 print(args)
 
@@ -50,7 +51,7 @@ def process_command(line, index):
 
     # Determine the output image file names
     qrout = 'out/{0}qr.png'.format(index)
-    artout = 'out/{0}art.jpg'.format(index)
+    artout = 'out/{0}art.png'.format(index)
 
     # Create a QR code from the command URI
     print(subprocess.check_output(['qrencode', '-s', '100', '-o', qrout, qrcode]))
@@ -68,7 +69,7 @@ def process_tunein(line, index):
 
     # Determine the output image file names
     qrout = 'out/{0}qr.png'.format(index)
-    artout = 'out/{0}art.jpg'.format(index)
+    artout = 'out/{0}art.png'.format(index)
 
     # Create a QR code from the command URI
     print(subprocess.check_output(['qrencode', '-s', '100', '-o', qrout, qrcode]))
@@ -85,7 +86,7 @@ def process_playlist_favorite(line, index):
 
     # Determine the output image file names
     qrout = 'out/{0}qr.png'.format(index)
-    artout = 'out/{0}art.jpg'.format(index)
+    artout = 'out/{0}art.png'.format(index)
 
     # Create a QR code from the command URI
     print(subprocess.check_output(['qrencode', '-s', '100', '-o', qrout, qrcode]))
@@ -98,6 +99,8 @@ def process_playlist_favorite(line, index):
 
 def process_track(line, index):
     split = re.split('\\|', line)
+
+    service = re.split('\\:', line)[0]
 
     if ':album:' in line:
         album = split[1]
@@ -112,7 +115,7 @@ def process_track(line, index):
 
     # Determine the output image file names
     qrout = 'out/{0}qr.png'.format(index)
-    artout = 'out/{0}art.jpg'.format(index)
+    artout = 'out/{0}art.png'.format(index)
 
     # Create a QR code from the track URI
     print(subprocess.check_output(['qrencode', '-s', '100', '-o', qrout, split[0]]))
@@ -120,29 +123,35 @@ def process_track(line, index):
     # Fetch the artwork and save to the output directory
     print(subprocess.check_output(['curl', arturl, '-o', artout]))
 
-    return (song, album, artist)
+    return (song, album, artist, service)
 
 
 # Return the HTML content for a single card.
-def card_content_html(index, artist, album, song):
+def card_content_html(index, artist, album, song, service):
     qrimg = '{0}qr.png'.format(index)
-    artimg = '{0}art.jpg'.format(index)
+    artimg = '{0}art.png'.format(index)
+    serviceimg = '{0}.png'.format(service)
 
     html = ''
     html += '  <img src="{0}" class="art"/>\n'.format(artimg)
     html += '  <img src="{0}" class="qrcode"/>\n'.format(qrimg)
-    html += '  <div class="labels">\n'
+    html += '  <div class="labels track-info">\n'
     html += '    <p class="song">{0}</p>\n'.format(song or album)
     if artist:
         html += '    <p class="artist"><span class="small">von</span> {0}</p>\n'.format(artist)
     if album and song is not None:
         html += '    <p class="album"><span class="small">Album </span> {0}</p>\n'.format(album)
     html += '  </div>\n'
+    if service:
+        html += '  <div class="labels music-service">\n'
+        html += '    <img src="{0}" class="logo"/>\n'.format(serviceimg)
+        html += '  </div>\n'
+
     return html
 
 
 # Generate a PNG version of an individual card (with no dashed lines).
-def generate_individual_card_image(index, artist, album, song):
+def generate_individual_card_image(index, artist, album, song, service):
     # First generate an HTML file containing the individual card
     html = '''
 <!DOCTYPE html>
@@ -153,7 +162,7 @@ def generate_individual_card_image(index, artist, album, song):
 <body>
   <div class="card">
 '''
-    html += card_content_html(index, artist, album, song)
+    html += card_content_html(index, artist, album, song, service)
     html += '''
 </div>
 </body>
@@ -174,6 +183,23 @@ def generate_individual_card_image(index, artist, album, song):
 
 
 def generate_cards():
+    duplex = args.print_dublex
+    htmlarr = []
+
+    def print_card_back():
+        html = ''
+        if duplex and len(htmlarr) > 0:
+            html += '<br style="clear: both;"/>\n'
+            html += '<div class="back">'
+            for back in htmlarr:
+                html += back
+
+            html += '</div>'
+            del htmlarr[:]
+            html += '<br style="clear: both;"/>\n'
+
+        return html
+
     # Create the output directory
     dirname = os.getcwd()
     outdir = os.path.join(dirname, 'out')
@@ -193,6 +219,12 @@ def generate_cards():
     # in `cards.css`; this prevents the card divs from being spread across multiple pages
     # when printed.)
     shutil.copyfile('cards/cards.css', 'out/cards.css')
+    shutil.copyfile('cards/amazonmusic.png', 'out/amazonmusic.png')
+    shutil.copyfile('cards/applemusic.png', 'out/applemusic.png')
+    shutil.copyfile('cards/spotify.png', 'out/spotify.png')
+    shutil.copyfile('cards/aldilife.png', 'out/aldilife.png')
+    shutil.copyfile('cards/napster.png', 'out/napster.png')
+    shutil.copyfile('cards/lib.png', 'out/lib.png')
 
     # Begin the HTML template
     html = '''
@@ -201,8 +233,11 @@ def generate_cards():
   <meta charset="utf-8">
   <link rel="stylesheet" href="cards.css">
 </head>
-<body>
 '''
+    if duplex:
+        html += '<body class="duplex">'
+    else:
+        html += '<body>'
 
     for line in lines:
         # Trim newline
@@ -217,7 +252,7 @@ def generate_cards():
         if line.startswith('cmd:'):
             (song, album, artist) = process_command(line, index)
         elif line.startswith('applemusic:') or line.startswith('amazonmusic:') or line.startswith('spotify:') or  line.startswith('aldilife:') or line.startswith('napster:') or line.startswith('lib:') :
-            (song, album, artist) = process_track(line, index)
+            (song, album, artist, service) = process_track(line, index)
         elif line.startswith('tunein:'):
             (song, album, artist) = process_tunein(line, index)
         elif line.startswith('favorite:') or line.startswith('playlist:'):
@@ -227,19 +262,32 @@ def generate_cards():
             continue
 
         # Append the HTML for this card
-        html += '<div class="card">\n'
-        html += card_content_html(index, artist, album, song)
-        html += '</div>\n'
+        cardhtml = '<div class="card">\n'
+        cardhtml += card_content_html(index, artist, album, song, service)
+        cardhtml += '</div>\n'
 
         if args.generate_images:
             # Also generate an individual PNG for the card
-            generate_individual_card_image(index, artist, album, song)
+            generate_individual_card_image(index, artist, album, song, service)
 
-        if index % 2 == 1:
-            html += '<br style="clear: both;"/>\n'
+        if duplex:
+            if index % 4 == 3:
+                cardhtml += '<br style="clear: both;"/>\n'
+        else:
+            if index % 2 == 1:
+                cardhtml += '<br style="clear: both;"/>\n'
+
+        html += cardhtml
+
+        if duplex:
+            htmlarr.append(cardhtml)
+
+            if index % 12 == 11:
+                html += print_card_back()
 
         index += 1
 
+    html += print_card_back()
     html += '</body>\n'
     html += '</html>\n'
 

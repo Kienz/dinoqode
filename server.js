@@ -54,7 +54,16 @@ app.post('/create', (req, res) => {
         return res.end();
     }
 
-    const pyProg = spawn('python3', ['./qrgen.py', '--input=tmp/cards.txt']);
+    var args = [
+        './qrgen.py',
+        '--input=tmp/cards.txt'
+    ];
+
+    if (req.body.printmode === 'dublex') {
+        args.push('--print-dublex');
+    }
+
+    const pyProg = spawn('python3', args);
 
     pyProg.stdout.on('close', function(data) {
         res.redirect('/result');
