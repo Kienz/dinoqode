@@ -55,7 +55,7 @@ app.post('/create', (req, res) => {
     }
 
     var args = [
-        './qrgen.py',
+        __dirname + '/qrgen.py',
         '--input=tmp/cards.txt'
     ];
 

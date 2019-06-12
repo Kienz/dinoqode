@@ -4,7 +4,8 @@
                 'amazonmusic': /.*music\.amazon\..*/,
                 'applemusic': /.*\.apple\.com.*/,
                 'spotify': /.*\.spotify\.com.*/,
-                'aldilife': /.*\.lifestore-flat\.de.*/
+                'aldilife': /.*\.lifestore-flat\.de.*/,
+                'napster': /.*\.napster\.com.*/
             },
             type,
             service,
@@ -57,7 +58,7 @@
                 arturl = temp.match(/url\("(.*)"\)/)[1];
             }
 
-        } else if (service === 'aldilife') {
+        } else if (service === 'aldilife' || service === 'napster') {
             id = document.querySelector('.blurred-image .image').style.backgroundImage.match(/url\(".*images\/Alb\.(.*)\/.*"\)/)[1];
             title = document.querySelector('.album-title').innerText;
             artist = document.querySelector('.artist-name').innerText;
@@ -106,7 +107,7 @@
     function copyToClipboard(text) {
         if (window.clipboardData && window.clipboardData.setData) {
             /*IE specific code path to prevent textarea being shown while dialog is visible.*/
-            return clipboardData.setData("Text", text); 
+            return clipboardData.setData("Text", text);
 
         } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
             var textarea = document.createElement("textarea");

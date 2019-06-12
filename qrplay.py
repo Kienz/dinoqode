@@ -232,7 +232,7 @@ def handle_aldilife_item(qrcode):
     else:
         action = 'now'
 
-    perform_room_request('napster/{0}/{1}'.format(action, qrcode.replace('aldilife:', '')), current_device)
+    perform_room_request('aldilifemusic/{0}/{1}'.format(action, qrcode.replace('aldilife:', '')), current_device)
 
 def handle_napster_item(qrcode):
     print('PLAYING FROM NAPSTER: ' + qrcode)

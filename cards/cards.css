@@ -4,7 +4,7 @@ body {
 
 body.duplex {
   margin: 0 auto;
-  width: 628px;
+  width: 629px; /* 628+1px to fit back-cover and front-cover */
 }
 
 .card {
