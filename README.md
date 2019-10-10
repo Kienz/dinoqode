@@ -51,6 +51,9 @@ Before inserting the microSD card to the Raspberry Pi follow step 3  (Enable SSH
 
 [Raspberry Pi SSH headless activation](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 
+#### 1.1 First connection to the Raspberry Pi
+
+TBD
 
 ### 2. Prepare your Raspberry Pi
 
@@ -60,7 +63,7 @@ Things may or may not work with other models (for example, how you control the o
 Set up the camera module:
 
 ```
-% sudo raspi-config
+sudo raspi-config
 # Select "5 Interface Options"
 # Select "P1 Camera" and choose "Yes"
 # Reboot
@@ -69,7 +72,7 @@ Set up the camera module:
 Set up Wi-fi:
 
 ```
-% sudo raspi-config
+sudo raspi-config
 # Select "2 Network Options"
 # Select "N2 Wi-fi" and follow the instructions
 ```
@@ -77,16 +80,16 @@ Set up Wi-fi:
 Update modules on Raspberry PI:
 
 ```
-% sudo apt-get update
+sudo apt-get update
 ```
 
 Install Node.js and NPM on Raspberry PI:
 
 ```
-% sudo apt-get install nodejs npm
-% sudo npm install -g npm@latest
-% sudo npm install -g n
-% sudo n stable
+sudo apt-get install nodejs npm
+sudo npm install -g npm@latest
+sudo npm install -g n
+sudo n stable
 ```
 
 Next, install `zbar-tools` (used to scan for QR codes) and test it out:
@@ -105,12 +108,12 @@ It's possible to run `node-sonos-http-api` directly on the Raspberry Pi, so that
 To install check out the `node-sonos-http-api` and start it:
 
 ```
-% mkdir ~/Developer
-% cd ~/Developer
-% git clone https://github.com/Kienz/node-sonos-http-api.git
-% cd node-sonos-http-api
-% npm install --production
-% npm start
+mkdir ~/Developer
+cd ~/Developer
+git clone https://github.com/Kienz/node-sonos-http-api.git
+cd node-sonos-http-api
+npm install --production
+npm start
 ```
 
 You can install it on a NAS too. I installed it on my QNAP NAS with a [Docker® image](https://cloud.docker.com/repository/docker/kienz/docker-node-sonos-http-api/).
@@ -135,15 +138,15 @@ You can install it on a NAS too. I installed it on my QNAP NAS with a [Docker® 
 First, clone the `dinoqode` repo if you haven't already on your primary computer:
 
 ```
-% cd ~/Developer
-% git clone https://github.com/Kienz/dinoqode
-% cd dinoqode
+cd ~/Developer
+git clone https://github.com/Kienz/dinoqode
+cd dinoqode
 ```
 
 Also install `qrencode`:
 
 ```
-% sudo apt-get install qrencode
+sudo apt-get install qrencode
 ```
 
 Next, create a text file that lists the different cards you want to create.  (See `example.txt` for some possibilities.)
@@ -154,8 +157,8 @@ Now you should have the complete string with id, artist, title/album name and co
 Finally, generate some cards and view the output in your browser:
 
 ```
-% python qrgen.py --input example.txt
-% open out/index.html
+python qrgen.py --input example.txt
+open out/index.html
 ```
 
 It'll look something like this:
@@ -169,7 +172,7 @@ It'll look something like this:
 First run `npm install` on the root folder of the dinoqode repo.
 
 ```
-% npm install
+npm install
 ```
 
 Next, run `node server.js` and open `<IP-RaspberryPI>:5006` in your browser. On the Dinoqode site you can print basic command cards and generate new cards.
@@ -179,30 +182,31 @@ Next, run `node server.js` and open `<IP-RaspberryPI>:5006` in your browser. On 
 On your Raspberry Pi, clone this `dinoqode` repo:
 
 ```
-% cd ~/Developer
-% git clone https://github.com/Kienz/dinoqode
-% cd dinoqode
+cd ~/Developer
+git clone https://github.com/Kienz/dinoqode
+cd dinoqode
 ```
 
 Then, launch `qrplay`, specifying the hostname of the machine running `node-sonos-http-api`:
 
 ```
-% python3 qrplay.py --hostname 0.0.0.0 --default-device "xyz" --default-volume 25 --skip-load
+python3 qrplay.py --hostname 0.0.0.0 --default-device "xyz" --default-volume 25 --skip-load
 ```
 
 If you want to use your own `dinoqode` as a standalone thing (not attached to a monitor, etc), you'll want to set up your Raspberry Pi to launch `qrplay`, `node-sonos-http-api` and `card-creator` when the device boots:
 
 ```
-% mkdir ~/Developer/logs
-% cd logs
-% echo > dinoqode.log
-% echo > server.log
-% echo > node-sonos-http-api.log
-% chmod -R +w .
+cd ~/Developer
+mkdir ~/Developer/logs
+cd logs
+echo > dinoqode.log
+echo > server.log
+echo > node-sonos-http-api.log
+chmod -R +w .
 ```
 
 ```
-% sudo nano /usr/local/bin/dinoqode.sh
+sudo nano /usr/local/bin/dinoqode.sh
 ```
 
 ```
@@ -221,7 +225,7 @@ sudo chmod +x /usr/local/bin/dinoqode.sh
 Now you have to insert `/usr/local/bin/dinoqode.sh` into `/etc/rc.local`.
 
 ```
-% sudo nano /etc/rc.local
+sudo nano /etc/rc.local
 ```
 
 After that `node-sonos-http-api`, `dinoqode` and `server` should start after reboot. After some seconds the red light on the camera should turn on.
@@ -229,7 +233,7 @@ After that `node-sonos-http-api`, `dinoqode` and `server` should start after reb
 To see what happens you can look inside the log files `dinoqode.log`, `node-sonos-http-api.log` or `server.log`.
 
 ```
-% tail -F ~/Developer/logs/dinoqode.log
+tail -F ~/Developer/logs/dinoqode.log
 ```
 
 
@@ -258,6 +262,29 @@ The camera model v2 includes a plastic tool to turn the lens.
 
 The camera model v1 have no tool includes. Also you have to cut the border around the lens with a sharp knife to remove the glue points. Otherwise the lens can not be turned.
 
+#### 7.1 Install Terminal Server
+
+```
+sudo apt-get update
+sudo apt-get install xrdp
+```
+
+To check if the xrdp terminal service is running:
+````
+sudo systemctl status xrdp
+````
+
+The status information should display `"Loaded: loaded"` and `"Active: active (running)"`.
+
+#### 7.2 Capture image to better refocus the camera
+
+Run the following command:
+
+````
+raspistill -o ~/cam.jpg
+````
+
+The image is saved in the users home directory. You can view the image in your terminal server session.
 
 ## The Cards
 
