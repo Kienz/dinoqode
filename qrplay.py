@@ -304,14 +304,16 @@ def handle_qrcode(qrcode):
 # Monitor the output of the QR code scanner.
 def start_scan():
     while True:
-        data = p.stdout.readline()
+        qrcode = p.communicate()[0] # stdout, stderr = p.communicate()
+        #data = p.stdout.readline()
 
-        if data:
-            data = data.decode('utf-8').encode('sjis').decode('utf-8')
+        #if data:
+        #    data = data.decode('utf-8').encode('sjis').decode('utf-8')
 
-        qrcode = str(data)[8:]
+        #qrcode = str(data)[8:]
         if qrcode:
-            qrcode = qrcode.rstrip()
+            #qrcode = qrcode.rstrip()
+            qrcode = qrcode.strip()
             handle_qrcode(qrcode)
 
 
@@ -382,7 +384,8 @@ if args.debug_file:
     read_debug_script()
 else:
     # Start the QR code reader
-    p = subprocess.Popen('/usr/bin/zbarcam --prescale=500x500 --nodisplay', shell=True, stdout=subprocess.PIPE)
+    #p = subprocess.Popen('/usr/bin/zbarcam --prescale=500x500 --nodisplay', shell=True, stdout=subprocess.PIPE)
+    p = subprocess.Popen('/usr/bin/zbarcam --prescale=500x500 --nodisplay', stdout=subprocess.PIPE)
 
     try:
         blink_led('rainbow')
