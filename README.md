@@ -45,6 +45,8 @@ On the software side, there are two separate Python scripts:
 
 ### 1. Raspberry Pi installation
 
+[Download Raspbian operating system image](http://downloads.raspberrypi.org/raspbian/images/raspbian-2019-04-09/2019-04-08-raspbian-stretch.zip)
+
 [Installing operating system images](https://www.raspberrypi.org/documentation/installation/installing-images/)
 
 Before inserting the microSD card to the Raspberry Pi follow step 3  (Enable SSH on a headless Raspberry Pi (add file to SD card on another machine)) on the following link.
@@ -53,9 +55,15 @@ Before inserting the microSD card to the Raspberry Pi follow step 3  (Enable SSH
 
 #### 1.1 First connection to the Raspberry Pi
 
-TBD
+Connect your computer and the Raspberry Pi with a lan cable. After this you can connect with ```ssh pi@raspberrypi.local``` (Password: raspberry).
 
 ### 2. Prepare your Raspberry Pi
+
+First update the firmware.
+
+```
+sudo rpi-update
+``
 
 I built this using a Raspberry Pi 3 Model B+ (running Raspbian) and one of the listed camera modules (testet with both).
 Things may or may not work with other models (for example, how you control the onboard LEDs varies by model).
