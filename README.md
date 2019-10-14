@@ -63,7 +63,7 @@ First update the firmware.
 
 ```
 sudo rpi-update
-``
+```
 
 I built this using a Raspberry Pi 3 Model B+ (running Raspbian) and one of the listed camera modules (testet with both).
 Things may or may not work with other models (for example, how you control the onboard LEDs varies by model).
