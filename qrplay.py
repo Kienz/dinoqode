@@ -62,10 +62,14 @@ def perform_request(url):
         result = response.read().decode('utf-8')
         parsed_json = json.loads(result)
 
-        if (parsed_json['status'] == 'success'):
+        try:
+            if (parsed_json['status'] == 'error'):
+                last_qrcode_success = False
+            else:
+                last_qrcode_success = True
+        except KeyError:
             last_qrcode_success = True
-        else:
-            last_qrcode_success = False
+            print('Key "status" not found in response - QRCode is marked as successful')
 
         print(result)
     except (IOError, http.client.HTTPException):
