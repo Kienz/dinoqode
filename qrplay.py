@@ -373,9 +373,9 @@ def read_debug_script():
 # Startup program
 # #############################################################################
 class Mode:
-    PLAY_AND_CLEAR = 1
-    BUILD_QUEUE = 2
-    PLAY_AND_QUEUE = 3
+    PLAY_AND_CLEAR = 'play_and_clear'
+    BUILD_QUEUE = 'build_queue'
+    PLAY_AND_QUEUE = 'play_and_queue'
 
 # Load the most recently used device, if available, otherwise fall back on the `default-device` argument
 try:
