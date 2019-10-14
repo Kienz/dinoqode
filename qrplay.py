@@ -396,7 +396,7 @@ try:
         current_playmode = playmode_file.read().replace('\n', '')
         print('Defaulting to last used play mode: ' + current_playmode)
 except:
-    current_playmode = PLAY_AND_QUEUE
+    current_playmode = Mode.PLAY_AND_QUEUE
     print('Play mode: ' + current_playmode)
 
 # Keep track of the last-seen code
