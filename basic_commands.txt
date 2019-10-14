@@ -1,0 +1,15 @@
+# cmd:playpause|Abspielen / Pausieren|https://img.icons8.com/ios/540/play-button-circled.png
+# cmd:next|Nächsten Titel abspielen|https://img.icons8.com/ios/540/end.png
+# cmd:previous|Vorherigen Titel abspielen|https://img.icons8.com/ios/540/skip-to-start.png
+cmd:unqueue|Liste ersetzen|https://img.icons8.com/540/delete-property.png
+cmd:queue|Am Listenende einfügen|https://img.icons8.com/ios/540/add-property.png
+cmd:playqueue|Jetzt abspielen|https://img.icons8.com/ios/540/play-property.png
+# cmd:repeat:all|Alle wiederholen|https://img.icons8.com/ios/540/repeat.png
+# cmd:repeat:one|Titel wiederholen|https://img.icons8.com/ios/540/repeat-one.png
+# cmd:repeat:none|Wiederholen aus|https://img.icons8.com/ios/540/right.png
+# cmd:shuffle:on|Zufällige Wiedergabe einschalten|https://img.icons8.com/ios/540/shuffle.png
+# cmd:shuffle:off|Zufällige Wiedergabe ausschalten|https://img.icons8.com/ios/540/personal-video-recorder-menu.png
+# cmd:mute:|Ton aus|https://img.icons8.com/ios/540/no-audio.png
+# cmd:unmute:|Ton an|https://img.icons8.com/ios/540/high-volume.png
+# cmd:volume:+5|Lautstärke +5|https://img.icons8.com/ios/540/speaker.png
+# cmd:volume:-5|Lautstärke -5|https://img.icons8.com/ios/540/low-volume.png

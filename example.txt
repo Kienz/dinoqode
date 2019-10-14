@@ -72,10 +72,10 @@
 # applemusic:album:1408541771|Folge 15: Das Buddel-Kuddel-Muddel|Bob der Baumeister|https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/e9/c3/fc/e9c3fc79-22a8-6311-3b20-1c039bb04478/886446945866.jpg/939x0w.jpg
 # applemusic:album:1417825881|Folge 16: Die allerbeste Weihnachtsfeier|Bob der Baumeister|https://is4-ssl.mzstatic.com/image/thumb/Music128/v4/05/95/d8/0595d83c-c108-faa3-1e43-af090196340f/886446945873.jpg/939x0w.jpg
 # applemusic:album:1439429123|Folge 17: Leos Prüfung|Bob der Baumeister|https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/62/82/4f/62824f0a-aee5-42ae-4230-eb47be9fcbe8/886446945880.jpg/939x0w.jpg
-applemusic:album:1445696385|Folge 18: Wirbel in der Werkstatt|Bob der Baumeister|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/a2/4a/25/a24a25ab-ef29-2246-12a2-a74ed5fa8a04/886446945897.jpg/939x0w.jpg
-applemusic:album:1458530890|Folge 19: Schreck lass nach! (Die Klassiker)|Bob der Baumeister|https://is4-ssl.mzstatic.com/image/thumb/Music123/v4/58/94/4e/58944e51-53f7-f72b-1cdf-542dd1938e41/886447626061.jpg/939x0w.jpg
-applemusic:album:1458536625|Folge 20: Bobs Team schafft das! (Die Klassiker)|Bob der Baumeister|https://is2-ssl.mzstatic.com/image/thumb/Music123/v4/e1/6a/7f/e16a7f3a-8444-613b-c841-c828e525ca15/886447626078.jpg/939x0w.jpg
-applemusic:album:1458532419|Folge 21: Bobs toller Entwurf (Die Klassiker)|Bob der Baumeister|https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/b7/a6/5a/b7a65a7a-505e-ad72-504e-fb65c29a7d8f/886447626085.jpg/939x0w.jpg
+# applemusic:album:1445696385|Folge 18: Wirbel in der Werkstatt|Bob der Baumeister|https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/a2/4a/25/a24a25ab-ef29-2246-12a2-a74ed5fa8a04/886446945897.jpg/939x0w.jpg
+# applemusic:album:1458530890|Folge 19: Schreck lass nach! (Die Klassiker)|Bob der Baumeister|https://is4-ssl.mzstatic.com/image/thumb/Music123/v4/58/94/4e/58944e51-53f7-f72b-1cdf-542dd1938e41/886447626061.jpg/939x0w.jpg
+# applemusic:album:1458536625|Folge 20: Bobs Team schafft das! (Die Klassiker)|Bob der Baumeister|https://is2-ssl.mzstatic.com/image/thumb/Music123/v4/e1/6a/7f/e16a7f3a-8444-613b-c841-c828e525ca15/886447626078.jpg/939x0w.jpg
+# applemusic:album:1458532419|Folge 21: Bobs toller Entwurf (Die Klassiker)|Bob der Baumeister|https://is5-ssl.mzstatic.com/image/thumb/Music113/v4/b7/a6/5a/b7a65a7a-505e-ad72-504e-fb65c29a7d8f/886447626085.jpg/939x0w.jpg
 
 
 # Alben 30 besten ...
@@ -276,8 +276,9 @@ applemusic:album:1458532419|Folge 21: Bobs toller Entwurf (Die Klassiker)|Bob de
 # cmd:playpause|Abspielen / Pausieren|https://img.icons8.com/ios/540/play-button-circled.png
 # cmd:next|Nächsten Titel abspielen|https://img.icons8.com/ios/540/end.png
 # cmd:previous|Vorherigen Titel abspielen|https://img.icons8.com/ios/540/skip-to-start.png
-# cmd:unqueue|Queue Modus deaktivieren|https://img.icons8.com/540/empty-trash.png
-# cmd:queue|Queue Modus aktivieren|https://img.icons8.com/ios/540/add-list.png
+# cmd:unqueue|Liste ersetzen|https://img.icons8.com/540/delete-property.png
+# cmd:queue|Am Listenende einfügen|https://img.icons8.com/ios/540/add-property.png
+# cmd:playqueue|Jetzt abspielen|https://img.icons8.com/ios/540/play-property.png
 
 #########################
 # Toggle Commands

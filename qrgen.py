@@ -183,6 +183,7 @@ def generate_individual_card_image(index, artist, album, song, service):
 
 
 def generate_cards():
+    service = ''
     duplex = args.print_dublex
     htmlarr = []
 
