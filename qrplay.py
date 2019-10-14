@@ -290,42 +290,42 @@ def handle_qrcode(qrcode):
         handle_command(qrcode)
     elif qrcode.startswith('applemusic:'):
         if current_playmode == Mode.PLAY_AND_CLEAR:
-            perform_room_request('clearqueue')
+            perform_room_request('clearqueue', current_device)
 
         handle_applemusic_item(qrcode)
     elif qrcode.startswith('amazonmusic:'):
         if current_playmode == Mode.PLAY_AND_CLEAR:
-            perform_room_request('clearqueue')
+            perform_room_request('clearqueue', current_device)
 
         handle_amazonmusic_item(qrcode)
     elif qrcode.startswith('spotify:'):
         if current_playmode == Mode.PLAY_AND_CLEAR:
-            perform_room_request('clearqueue')
+            perform_room_request('clearqueue', current_device)
 
         handle_spotify_item(qrcode)
     elif qrcode.startswith('napster:'):
         if current_playmode == Mode.PLAY_AND_CLEAR:
-            perform_room_request('clearqueue')
+            perform_room_request('clearqueue', current_device)
 
         handle_napster_item(qrcode)
     elif qrcode.startswith('aldilife:'):
         if current_playmode == Mode.PLAY_AND_CLEAR:
-            perform_room_request('clearqueue')
+            perform_room_request('clearqueue', current_device)
 
         handle_aldilife_item(qrcode)
     elif qrcode.startswith('favorite:') or qrcode.startswith('playlist:'):
         if current_playmode == Mode.PLAY_AND_CLEAR:
-            perform_room_request('clearqueue')
+            perform_room_request('clearqueue', current_device)
 
         handle_favorite_playlist_item(qrcode)
     elif qrcode.startswith('tunein:'):
         if current_playmode == Mode.PLAY_AND_CLEAR:
-            perform_room_request('clearqueue')
+            perform_room_request('clearqueue', current_device)
 
         handle_tunein_item(qrcode)
     elif qrcode.startswith('lib'):
         if current_playmode == Mode.PLAY_AND_CLEAR:
-            perform_room_request('clearqueue')
+            perform_room_request('clearqueue', current_device)
 
         handle_library_item(qrcode)
     else:
