@@ -123,7 +123,7 @@ def blink_led(type):
 # Handling QR command
 # If QR code is defined the Blinkt! led bar is flashing green otherwise red
 def handle_command(qrcode):
-    global current_mode
+    global current_playmode
     global last_qrcode_success
 
     room = current_device
@@ -146,15 +146,29 @@ def handle_command(qrcode):
         phrase = None
 
     elif qrcode == 'cmd:queue':
-        current_mode = Mode.BUILD_QUEUE;
+        current_playmode = Mode.BUILD_QUEUE;
         phrase = None
         room = current_device
 
+        with open(".last-playmode", "w") as playmode_file:
+            playmode_file.write(current_playmode)
+
     elif qrcode == 'cmd:unqueue':
-        current_mode = Mode.PLAY_AND_CLEAR;
+        current_playmode = Mode.PLAY_AND_CLEAR;
         phrase = None
         room = current_device
         perform_room_request('clearqueue', room)
+
+        with open(".last-playmode", "w") as playmode_file:
+            playmode_file.write(current_playmode)
+
+    elif qrcode == 'cmd:playqueue':
+        current_playmode = Mode.PLAY_AND_QUEUE;
+        phrase = None
+        room = current_device
+
+        with open(".last-playmode", "w") as playmode_file:
+            playmode_file.write(current_playmode)
 
     elif qrcode.startswith('cmd:room'):
         room = re.split('\\|', qrcode)[1]
@@ -196,7 +210,7 @@ def handle_library_item(qrcode):
 def handle_spotify_item(qrcode):
     print('PLAYING FROM SPOTIFY: ' + qrcode)
 
-    if current_mode == Mode.BUILD_QUEUE:
+    if current_playmode == Mode.BUILD_QUEUE:
         action = 'queue'
     else:
         action = 'now'
@@ -206,7 +220,7 @@ def handle_spotify_item(qrcode):
 def handle_applemusic_item(qrcode):
     print('PLAYING FROM APPLE MUSIC: ' + qrcode)
 
-    if current_mode == Mode.BUILD_QUEUE:
+    if current_playmode == Mode.BUILD_QUEUE:
         action = 'queue'
     else:
         action = 'now'
@@ -217,7 +231,7 @@ def handle_applemusic_item(qrcode):
 def handle_amazonmusic_item(qrcode):
     print('PLAYING FROM AMAZON MUSIC: ' + qrcode)
 
-    if current_mode == Mode.BUILD_QUEUE:
+    if current_playmode == Mode.BUILD_QUEUE:
         action = 'queue'
     else:
         action = 'now'
@@ -227,7 +241,7 @@ def handle_amazonmusic_item(qrcode):
 def handle_aldilife_item(qrcode):
     print('PLAYING FROM ALDI LIFE (NAPSTER): ' + qrcode)
 
-    if current_mode == Mode.BUILD_QUEUE:
+    if current_playmode == Mode.BUILD_QUEUE:
         action = 'queue'
     else:
         action = 'now'
@@ -237,7 +251,7 @@ def handle_aldilife_item(qrcode):
 def handle_napster_item(qrcode):
     print('PLAYING FROM NAPSTER: ' + qrcode)
 
-    if current_mode == Mode.BUILD_QUEUE:
+    if current_playmode == Mode.BUILD_QUEUE:
         action = 'queue'
     else:
         action = 'now'
@@ -275,20 +289,44 @@ def handle_qrcode(qrcode):
     if qrcode.startswith('cmd:'):
         handle_command(qrcode)
     elif qrcode.startswith('applemusic:'):
+        if current_playmode == Mode.PLAY_AND_CLEAR:
+            perform_room_request('clearqueue')
+
         handle_applemusic_item(qrcode)
     elif qrcode.startswith('amazonmusic:'):
+        if current_playmode == Mode.PLAY_AND_CLEAR:
+            perform_room_request('clearqueue')
+
         handle_amazonmusic_item(qrcode)
     elif qrcode.startswith('spotify:'):
+        if current_playmode == Mode.PLAY_AND_CLEAR:
+            perform_room_request('clearqueue')
+
         handle_spotify_item(qrcode)
     elif qrcode.startswith('napster:'):
+        if current_playmode == Mode.PLAY_AND_CLEAR:
+            perform_room_request('clearqueue')
+
         handle_napster_item(qrcode)
     elif qrcode.startswith('aldilife:'):
+        if current_playmode == Mode.PLAY_AND_CLEAR:
+            perform_room_request('clearqueue')
+
         handle_aldilife_item(qrcode)
     elif qrcode.startswith('favorite:') or qrcode.startswith('playlist:'):
+        if current_playmode == Mode.PLAY_AND_CLEAR:
+            perform_room_request('clearqueue')
+
         handle_favorite_playlist_item(qrcode)
     elif qrcode.startswith('tunein:'):
+        if current_playmode == Mode.PLAY_AND_CLEAR:
+            perform_room_request('clearqueue')
+
         handle_tunein_item(qrcode)
     elif qrcode.startswith('lib'):
+        if current_playmode == Mode.PLAY_AND_CLEAR:
+            perform_room_request('clearqueue')
+
         handle_library_item(qrcode)
     else:
         last_qrcode_success = False
@@ -337,6 +375,7 @@ def read_debug_script():
 class Mode:
     PLAY_AND_CLEAR = 1
     BUILD_QUEUE = 2
+    PLAY_AND_QUEUE = 3
 
 # Load the most recently used device, if available, otherwise fall back on the `default-device` argument
 try:
@@ -347,12 +386,24 @@ except:
     current_device = args.default_device
     print('Initial room: ' + current_device)
 
+# Load the last save play mode, if available, otherwise fall back on the `PLAY_AND_QUEUE` argument
+# PLAY_AND_QUEUE = Play current album/song and don't clear the queue
+# PLAY_AND_CLEAR = Play current album/song and clear the queue
+# BUILD_QUEUE = Add current album/song to the queue
+
+try:
+    with open('.last-playmode', 'r') as playmode_file:
+        current_playmode = playmode_file.read().replace('\n', '')
+        print('Defaulting to last used play mode: ' + current_playmode)
+except:
+    current_playmode = PLAY_AND_QUEUE
+    print('Play mode: ' + current_playmode)
+
 # Keep track of the last-seen code
 last_qrcode = ''
 last_qrcode_success = True
 
 base_url = 'http://' + args.hostname + ':5005'
-current_mode = Mode.PLAY_AND_CLEAR
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 perform_room_request('pause', current_device)

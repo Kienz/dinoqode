@@ -147,7 +147,7 @@ First, clone the `dinoqode` repo if you haven't already on your primary computer
 
 ```
 cd ~/Developer
-git clone https://github.com/Kienz/dinoqode
+git clone https://github.com/Kienz/dinoqode.git
 cd dinoqode
 ```
 
@@ -187,12 +187,10 @@ Next, run `node server.js` and open `<IP-RaspberryPI>:5006` in your browser. On 
 
 ### 5. Start `qrplay.py`
 
-On your Raspberry Pi, clone this `dinoqode` repo:
+On your Raspberry Pi, navigate to the `dinoqode` repo:
 
 ```
-cd ~/Developer
-git clone https://github.com/Kienz/dinoqode
-cd dinoqode
+cd ~/Developer/dinoqode
 ```
 
 Then, launch `qrplay`, specifying the hostname of the machine running `node-sonos-http-api`:
