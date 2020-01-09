@@ -52,6 +52,8 @@ arg_parser.add_argument('--speak-welcome', action='store_true', help='should din
 args = arg_parser.parse_args()
 print(args)
 
+current_device = args.default_device
+
 # Call http request
 def perform_request(url):
     global last_qrcode_success
@@ -89,6 +91,8 @@ def perform_room_request(path, room):
 # Switch to specific room and save the room in last-device file
 def switch_to_room(room):
     global current_device
+    global last_qrcode
+
     last_qrcode = ''
 
     perform_room_request('pause', current_device)
@@ -103,7 +107,7 @@ def speak(phrase, room=None):
         room = current_device
 
     print('SPEAKING: \'{0}\''.format(phrase))
-    perform_room_request('say/' + urllib.quote(phrase) + '/de', room)
+    perform_room_request('say/' + urllib.parse.quote(phrase) + '/de', room)
 
 # Flash led lights (onboard or Blinkt! leds)
 def blink_led(type):
@@ -150,7 +154,7 @@ def handle_command(qrcode):
         phrase = None
 
     elif qrcode == 'cmd:queue':
-        current_playmode = Mode.BUILD_QUEUE;
+        current_playmode = Mode.BUILD_QUEUE
         phrase = None
         room = current_device
 
@@ -158,7 +162,7 @@ def handle_command(qrcode):
             playmode_file.write(current_playmode)
 
     elif qrcode == 'cmd:unqueue':
-        current_playmode = Mode.PLAY_AND_CLEAR;
+        current_playmode = Mode.PLAY_AND_CLEAR
         phrase = None
         room = current_device
         perform_room_request('clearqueue', room)
@@ -167,7 +171,7 @@ def handle_command(qrcode):
             playmode_file.write(current_playmode)
 
     elif qrcode == 'cmd:playqueue':
-        current_playmode = Mode.PLAY_AND_QUEUE;
+        current_playmode = Mode.PLAY_AND_QUEUE
         phrase = None
         room = current_device
 
@@ -208,7 +212,7 @@ def handle_library_item(qrcode):
     else:
         action = 'song'
 
-    perform_room_request('musicsearch/library/{0}/{1}'.format(action, urllib.quote(search)), current_device)
+    perform_room_request('musicsearch/library/{0}/{1}'.format(action, urllib.parse.quote(search)), current_device)
 
 
 def handle_spotify_item(qrcode):
@@ -265,15 +269,15 @@ def handle_napster_item(qrcode):
 def handle_favorite_playlist_item(qrcode):
     print('PLAYING FROM SONOS FAVORITE/PLAYLIST: ' + qrcode)
 
-    split = re.split('\\:', qrcode);
+    split = re.split('\\:', qrcode)
 
-    perform_room_request('{0}/{1}'.format(split[0], urllib.quote(split[1])), current_device)
+    perform_room_request('{0}/{1}'.format(split[0], urllib.parse.quote(split[1])), current_device)
 
 
 def handle_tunein_item(qrcode):
     print('PLAYING FROM TUNEIN: ' + qrcode)
 
-    split = re.split('\\:', qrcode);
+    split = re.split('\\:', qrcode)
 
     perform_room_request('{0}/{1}/{2}'.format(split[0], split[1], split[2]), current_device)
 

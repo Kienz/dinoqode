@@ -243,7 +243,7 @@ tail -F ~/Developer/logs/dinoqode.log
 ```
 
 
-### 6. Use Blink! led bar to display success/failure of commands
+### 6. Use Blinkt! led bar to display success/failure of commands
 
 Some commands have no output and it's hard to know if the command works or not. Therefore you can add the Blinkt! led bar to you Raspberry Pi.
 
