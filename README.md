@@ -320,24 +320,12 @@ Say something and send the sepak command to a Sonos Speaker (with the help of `n
 Scan the QR code with your iPhone and play the song/album on a Sonos Speaker.
 
 
-### Kill Dinoqode and camera process
-
-Search Dinoqode process and kill the process by id.
-```
-% ps -ef | grep python3
-````
+### Stop Services
 
 ```
-% sudo kill -9 <id>
-```
-
-Find the camera process id.
-```
-% sudo fuser /dev/video0
-```
-
-```
-% sudo kill -9 <id>
+sudo systemctl stop dinoqode.service
+sudo systemctl stop dinoqode-server.service
+sudo systemctl stop node-sonos-http-api.service
 ```
 
 
