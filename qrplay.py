@@ -36,10 +36,12 @@ import traceback
 
 try:
     use_blinkt = True
+    print('use_blinkt = True')
     import blinkt
     blinkt.set_clear_on_exit(True)
 except ImportError:
     use_blinkt = False
+    print('use_blinkt = False')
 
 
 # Parse the command line arguments
@@ -115,20 +117,24 @@ def blink_led(type):
     if use_blinkt == True:
         # Causes the Blinkt! led bar to blink
         if type == 'pulse-green':
-            blinkt_subp = subprocess.Popen(["/usr/bin/python3", os.path.join(current_dir, "blinkt_led_pulse.py"), "--brightness", "1", "--color", "0,128,0"])
-            sleep(4)
+            blinkt_subp = subprocess.Popen(["/usr/bin/python", os.path.join(current_dir, "blinkt_led_pulse.py"), "--brightness", "1", "--color", "0,128,0"])
+            sleep(8)
         elif type == 'pulse-red':
-            blinkt_subp = subprocess.Popen(["/usr/bin/python3", os.path.join(current_dir, "blinkt_led_pulse.py"), "--brightness", "1", "--color", "255,0,0"])
-            sleep(4)
+            blinkt_subp = subprocess.Popen(["/usr/bin/python", os.path.join(current_dir, "blinkt_led_pulse.py"), "--brightness", "1", "--color", "255,0,0"])
+            sleep(8)
         elif type == 'rainbow':
-            blinkt_subp = subprocess.Popen(["/usr/bin/python3", os.path.join(current_dir, "blinkt_led_rainbow.py")])
-            sleep(4)
+            blinkt_subp = subprocess.Popen(["/usr/bin/python", os.path.join(current_dir, "blinkt_led_rainbow.py")])
+            sleep(8)
+
+        print('blink_led: ' + type);
 
         blinkt_subp.kill()
         sleep(0.0001)
         blinkt.clear()
         blinkt.show()
         sleep(0.0001)
+        blinkt.clear()
+        blinkt.show()
 
 # Handling QR command
 # If QR code is defined the Blinkt! led bar is flashing green otherwise red
