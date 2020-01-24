@@ -1,0 +1,16 @@
+[Install]
+WantedBy=multi-user.target
+
+[Unit]
+Description=node-sonos-http-api service
+After=network.target
+
+[Service]
+User=pi
+ExecStart=/usr/local/bin/node server.js
+ExecStartPost=/bin/sleep 50
+WorkingDirectory=/home/pi/Developer/node-sonos-http-api/
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=node-sonos-http-api
+Restart=on-failure

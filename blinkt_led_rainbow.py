@@ -5,7 +5,6 @@
 
 import colorsys
 import time
-
 import blinkt
 
 spacing = 360.0 / 16.0

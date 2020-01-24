@@ -1,0 +1,8 @@
+####
+# Enable services
+####
+# sudo systemctl enable dinoqode.service
+# sudo systemctl enable dinoqode-server.service
+# sudo systemctl enable node-sonos-http-api.service
+# sudo reboot
+

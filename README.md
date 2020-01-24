@@ -199,47 +199,45 @@ Then, launch `qrplay`, specifying the hostname of the machine running `node-sono
 python3 qrplay.py --hostname 0.0.0.0 --default-device "xyz" --default-volume 25 --skip-load
 ```
 
-If you want to use your own `dinoqode` as a standalone thing (not attached to a monitor, etc), you'll want to set up your Raspberry Pi to launch `qrplay`, `node-sonos-http-api` and `card-creator` when the device boots:
+If you want to use your own `dinoqode` as a standalone thing (not attached to a monitor, etc), you'll want to set up your Raspberry Pi to launch `dinoqode`, `node-sonos-http-api` and `dinoqode-server` when the device boots:
 
 ```
 cd ~/Developer
 mkdir ~/Developer/logs
 cd logs
 echo > dinoqode.log
-echo > server.log
+echo > dinoqode-server.log
 echo > node-sonos-http-api.log
 chmod -R +w .
+chown root:adm /home/pi/Developer/log/dinoqode.log
+chown root:adm /home/pi/Developer/log/dinoqode-server.log
+chown root:adm /home/pi/Developer/log/node-sonos-http-api.log
 ```
 
-```
-sudo nano /usr/local/bin/dinoqode.sh
-```
+Copy the files from `/pi/etc/systemd/system` to the Raspberry Pi (`/etc/systemd/system`) and enable the services.
 
 ```
-#!/bin/bash
-
-su pi -c "npm start --prefix /home/pi/Developer/node-sonos-http-api/ > /home/pi/Developer/logs/node-sonos-http-api.log &"
-su pi -c "cd /home/pi/Developer/dinoqode && node server.js > /home/pi/Developer/logs/server.log &"
-sleep 12
-stdbuf -oL python3 /home/pi/Developer/dinoqode/qrplay.py --hostname 0.0.0.0 --default-device "xyz" --default-volume 25 --skip-load > /home/pi/Developer/logs/dinoqode.log &
+sudo systemctl enable dinoqode.service
+sudo systemctl enable dinoqode-server.service
+sudo systemctl enable node-sonos-http-api.service
 ```
 
-```
-sudo chmod +x /usr/local/bin/dinoqode.sh
-```
+After that `node-sonos-http-api`, `dinoqode` and `dinoqode-server` services should start after reboot.
 
-Now you have to insert `/usr/local/bin/dinoqode.sh` into `/etc/rc.local`.
-
-```
-sudo nano /etc/rc.local
-```
-
-After that `node-sonos-http-api`, `dinoqode` and `server` should start after reboot. After some seconds the red light on the camera should turn on.
-
-To see what happens you can look inside the log files `dinoqode.log`, `node-sonos-http-api.log` or `server.log`.
+To see what happens you can look inside the log files `dinoqode.log`, `node-sonos-http-api.log` or `dinoqode-server.log`.
 
 ```
 tail -F ~/Developer/logs/dinoqode.log
+tail -F ~/Developer/logs/dinoqode-server.log
+tail -F ~/Developer/logs/node-sonos-http-api.log
+```
+
+or
+
+```
+journalctl -u dinoqode.service
+journalctl -u dinoqode-server.service
+journalctl -u node-sonos-http-api.service
 ```
 
 

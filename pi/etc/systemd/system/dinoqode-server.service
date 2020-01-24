@@ -1,0 +1,15 @@
+[Install]
+WantedBy=multi-user.target
+
+[Unit]
+Description=Dinoqode-Server service
+After=network.target
+
+[Service]
+User=pi
+ExecStart=/usr/local/bin/node server.js
+WorkingDirectory=/home/pi/Developer/dinoqode
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=dinoqode-server
+Restart=on-failure

@@ -1,0 +1,13 @@
+####
+# Set correct permission to log files
+####
+# ls -alth /var/log/syslog
+-rw-r----- 1 root adm 439K Mar  5 19:35 /var/log/syslog
+# chown root:adm /home/pi/Developer/log/dinoqode.log
+# chown root:adm /home/pi/Developer/log/dinoqode-server.log
+# chown root:adm /home/pi/Developer/log/node-sonos-http-api.log
+
+####
+# Restart rsyslog service
+####
+# sudo systemctl restart rsyslog

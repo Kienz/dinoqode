@@ -37,6 +37,7 @@ import traceback
 try:
     use_blinkt = True
     import blinkt
+    blinkt.set_clear_on_exit(True)
 except ImportError:
     use_blinkt = False
 
@@ -124,9 +125,10 @@ def blink_led(type):
             sleep(4)
 
         blinkt_subp.kill()
-        sleep(0.1)
+        sleep(0.0001)
         blinkt.clear()
         blinkt.show()
+        sleep(0.0001)
 
 # Handling QR command
 # If QR code is defined the Blinkt! led bar is flashing green otherwise red
