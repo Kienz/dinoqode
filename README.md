@@ -209,9 +209,9 @@ echo > dinoqode.log
 echo > dinoqode-server.log
 echo > node-sonos-http-api.log
 chmod -R +w .
-chown root:adm /home/pi/Developer/log/dinoqode.log
-chown root:adm /home/pi/Developer/log/dinoqode-server.log
-chown root:adm /home/pi/Developer/log/node-sonos-http-api.log
+sudo chown root:adm /home/pi/Developer/logs/dinoqode.log
+sudo chown root:adm /home/pi/Developer/logs/dinoqode-server.log
+sudo chown root:adm /home/pi/Developer/logs/node-sonos-http-api.log
 ```
 
 Copy the files from `/pi/etc/systemd/system` to the Raspberry Pi (`/etc/systemd/system`) and enable the services.
