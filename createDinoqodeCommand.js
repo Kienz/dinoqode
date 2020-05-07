@@ -28,9 +28,9 @@
 
         if (service === 'applemusic') {
             id = document.querySelector('meta[name="apple:content_id"]').content;
-            title = document.querySelector('span.product-header__title').getAttribute('aria-label');
-            artist = document.querySelector('span.product-header__identity a').innerText;
-            arturl = document.querySelector('picture.we-artwork source:first-child').srcset.split(',')[2].replace(' 3x','');
+            title = document.querySelector('h1.product-name').innerText;
+            artist = document.querySelector('h2.product-creator a').innerText;
+            arturl = document.querySelector('div.product-lockup__artwork-for-product img').srcset.split(' ')[5].replace('540w,','');
 
         } else if (service === 'amazonmusic') {
             temp = url.split('/');
