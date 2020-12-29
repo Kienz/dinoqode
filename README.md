@@ -108,7 +108,7 @@ Next, install `zbar-tools` (used to scan for QR codes) and test it out:
 
 ### 3. Start `node-sonos-http-api`
 
-`qrplay` relies on [node-sonos-http-api](https://github.com/Kienz/node-sonos-http-api).
+`qrplay` relies on [node-sonos-http-api](https://github.com/jishi/node-sonos-http-api).
 
 (Note: `node-sonos-http-api` made it easy to bootstrap this project, as it already did much of what I needed.)
 
@@ -118,7 +118,7 @@ To install check out the `node-sonos-http-api` and start it:
 ```
 mkdir ~/Developer
 cd ~/Developer
-git clone https://github.com/Kienz/node-sonos-http-api.git
+git clone https://github.com/jishi/node-sonos-http-api.git
 cd node-sonos-http-api
 npm install --production
 npm start
