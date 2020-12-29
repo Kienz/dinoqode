@@ -26,11 +26,11 @@
             }
         }
 
-        if (service === 'applemusic') {
+        if (service === 'applemusic') {
             id = document.querySelector('meta[name="apple:content_id"]').content;
             title = document.querySelector('h1.product-name').innerText;
             artist = document.querySelector('h2.product-creator a').innerText;
-            arturl = document.querySelector('div.product-lockup__artwork-for-product img').srcset.split(' ')[5].replace('540w,','');
+            arturl = document.querySelector('div.product-lockup__artwork-for-product picture source').srcset.split(' ')[4].replace('540w,','');
 
         } else if (service === 'amazonmusic') {
             temp = url.split('/');
@@ -58,7 +58,7 @@
                 arturl = temp.match(/url\("(.*)"\)/)[1];
             }
 
-        } else if (service === 'aldilife' || service === 'napster') {
+        } else if (service === 'aldilife' || service === 'napster') {
             id = document.querySelector('.blurred-image .image').style.backgroundImage.match(/url\(".*images\/Alb\.(.*)\/.*"\)/)[1];
             title = document.querySelector('.album-title').innerText;
             artist = document.querySelector('.artist-name').innerText;
