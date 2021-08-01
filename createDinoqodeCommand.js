@@ -26,6 +26,13 @@
             }
         }
 
+        if (service === 'napster') {
+            // Check if service is Napster or Aldi Life Music
+            if (document.querySelectorAll('.aldi-player-logo').length) {
+                service = 'aldilife';
+            }
+        }
+
         if (service === 'applemusic') {
             id = document.querySelector('meta[name="apple:content_id"]').content;
             title = document.querySelector('h1.product-name').innerText;
